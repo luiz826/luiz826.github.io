@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>luiz fernando</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS (official CDN script) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-neutral-900 text-neutral-100 min-h-screen flex flex-col">
+
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-neutral-900/80 backdrop-blur-sm border-b border-neutral-800">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo / Name -->
+            <div class="font-bold text-xl">
+                LF.
+            </div>
+            <!-- Nav Links -->
+            <nav>
+                <ul class="flex items-center space-x-6 text-sm">
+                    <li><a href="#home" class="hover:text-neutral-400 transition">Home</a></li>
+                    <li><a href="#experience" class="hover:text-neutral-400 transition">Experience</a></li>
+                    <li><a href="#projects" class="hover:text-neutral-400 transition">Projects</a></li>
+                    <li><a href="#extracurricular" class="hover:text-neutral-400 transition">Extracurricular</a></li>
+                    <li><a href="#curriculum" class="hover:text-neutral-400 transition">Curriculum</a></li>
+                    <li><a href="#education" class="hover:text-neutral-400 transition">Education</a></li>
+                    <li><a href="#certifications" class="hover:text-neutral-400 transition">Certifications</a></li>
+                    <li>
+                        <button id="moreMenuBtn" class="hover:text-neutral-400 transition relative">
+                            More ▸
+                        </button>
+                        <!-- Example: hidden dropdown (expand on click) -->
+                        <div id="dropdownMenu"
+                            class="hidden absolute right-0 mt-2 w-40 bg-neutral-800 text-sm border border-neutral-700 rounded shadow-lg">
+                            <a href="#contact" class="block px-4 py-2 hover:bg-neutral-700">Contact</a>
+                            <a href="#about" class="block px-4 py-2 hover:bg-neutral-700">About me</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="home"
+        class="flex-grow bg-gradient-to-tr from-purple-700 via-pink-700 to-indigo-700 pt-20 pb-32 flex items-center justify-center relative overflow-hidden">
+        <!-- Subtle background gradient overlay (optional) -->
+        <div
+            class="absolute inset-0 bg-gradient-to-br from-black via-transparent to-black opacity-40 pointer-events-none">
+        </div>
+
+        <div class="relative max-w-3xl mx-auto px-4 text-center">
+
+            <!-- Profile Image -->
+            <img src="images/me.jpeg" alt="Luiz Fernando" class="w-48 h-48 rounded-full mx-auto mb-4 shadow-lg">
+
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                Hey, I'm <span class="text-neutral-100">Luiz</span>
+            </h1>
+            <p class="text-neutral-200 text-lg md:text-xl mb-8">
+                I’m a <strong>Machine Learning Engineer</strong> &amp; <strong>Data Engineer</strong> who loves building
+                data products and advanced ML models to solve real-world problems.
+            </p>
+
+            <!-- Buttons -->
+            <div class="space-x-4">
+                <a href="#contact"
+                    class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded shadow transition">
+                    Contact me
+                </a>
+                <a href="#about"
+                    class="inline-block px-6 py-3 bg-neutral-700 hover:bg-neutral-600 text-white font-semibold rounded shadow transition">
+                    More about me
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="max-w-3xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-4">
+            About me.
+        </h2>
+        <p class="text-neutral-200 mb-6 leading-relaxed">
+            I’ve been coding for over five years, beginning my journey in 2020. Initially, I contributed to various
+            university projects, working with Python, C++, and C. During this time, I developed a strong foundation in
+            programming fundamentals and problem-solving skills.
+        </p>
+        <p class="text-neutral-200 mb-8 leading-relaxed">
+            As I delved deeper, I discovered my passion for data science, machine learning, and data engineering. I
+            studied optimization, data pipelines, and the art of crafting data products to meet real business needs. I’m
+            currently working as a Machine Learning Engineer, where I apply these skills to projects impacting more than
+            100 million customers at Nubank. My focus is on designing and deploying robust ML solutions that drive
+            tangible results.
+        </p>
+        <!-- Additional CTA Buttons -->
+        <div class="space-x-4">
+            <a href="https://github.com/luiz826"
+                class="inline-block px-6 py-3 bg-blue-600 hover:bg-blue-500 rounded text-white font-semibold shadow transition">
+                View my Github
+            </a>
+            <a href="#contact"
+                class="inline-block px-6 py-3 bg-neutral-700 hover:bg-neutral-600 rounded text-white font-semibold shadow transition">
+                Contact me
+            </a>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="max-w-5xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-4">Experience</h2>
+        <p class="text-neutral-200 mb-6 leading-relaxed">
+            Here’s a quick overview of my professional background:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- EXPERIENCE CARD 1 -->
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <!-- Placeholder Image -->
+                <img src="images/nubank.jpeg" alt="Nubank Experience" class="w-full h-64 object-cover rounded mb-4" />
+
+                <h3 class="text-xl font-semibold mb-2">Machine Learning Engineer</h3>
+                <p class="text-neutral-400 mb-4">Nubank • 2022 - Present</p>
+                <ul class="list-disc list-inside space-y-2 text-neutral-300 text-sm">
+                    <li>Implemented and deployed risk and spending ML models in both online and batch environments,
+                        increasing predictive performance and business value.</li>
+                    <li>Developed a monitoring platform using Spark Scala for key metrics, streamlining dataset creation
+                        and enhancing analytics for stakeholders.</li>
+                </ul>
+            </div>
+
+            <!-- EXPERIENCE CARD 2 -->
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <!-- Placeholder Image -->
+                <img src="images/mgi_tech.jpeg" alt="Data Engineering" class="w-full h-64 object-cover rounded mb-4" />
+
+                <h3 class="text-xl font-semibold mb-2">Data Engineer</h3>
+                <p class="text-neutral-400 mb-4">MGITech/Lagid • 2021 - 2022</p>
+                <ul class="list-disc list-inside space-y-2 text-neutral-300 text-sm">
+                    <li>Built robust ETL pipelines from transactional SQL databases to business dashboards,
+                        significantly improving the company’s analytical capabilities.</li>
+                </ul>
+            </div>
+
+            <!-- EXPERIENCE CARD 3 -->
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <!-- Placeholder Image -->
+                <img src="images/embrapii.jfif" alt="Data Scientist" class="w-full h-64 object-cover rounded mb-4" />
+
+                <h3 class="text-xl font-semibold mb-2">Data Scientist</h3>
+                <p class="text-neutral-400 mb-4">Huawei/Embrapii • 2021 - 2022</p>
+                <ul class="list-disc list-inside space-y-2 text-neutral-300 text-sm">
+                    <li>Collected and refined sensor data for optimized positioning of solar panels at a photovoltaic
+                        generation plant.</li>
+                    <li>Stored time-series data in NoSQL databases, enabling real-time analysis and performance
+                        insights.</li>
+                    <li>Modeled and trained high-accuracy ML models to maximize energy output and operational
+                        efficiency.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="max-w-5xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-4">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- PROJECT CARD 1 -->
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <!-- Placeholder Image -->
+
+                <h3 class="text-xl font-semibold mb-2">PUMLE</h3>
+                <p class="text-neutral-400 mb-4">
+                    A comprehensive data engineering pipeline for geological carbon storage applications in Brazilian
+                    reservoirs. PUMLE consolidates simulation outputs into multidimensional arrays and offers export
+                    functionality in multiple formats (NumPy, Zarr, MAT-files, CSV), including cloud uploads.
+                </p>
+                <a href="https://github.com/luiz826/PUMLE" class="text-blue-400 hover:underline">View on GitHub</a>
+            </div>
+
+            <!-- PROJECT CARD 2 -->
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <!-- Placeholder Image -->
+
+                <h3 class="text-xl font-semibold mb-2">Car Plate Detection</h3>
+                <p class="text-neutral-400 mb-4">
+                    A computer vision solution built with Python and YOLO for identifying and extracting characters from
+                    Brazilian car plates.
+                </p>
+                <a href="https://github.com/luiz826/plate-detection" class="text-blue-400 hover:underline">View on
+                    GitHub</a>
+            </div>
+
+            <!-- PROJECT CARD 3 -->
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <!-- Placeholder Image -->
+
+                <h3 class="text-xl font-semibold mb-2">Bin Packing</h3>
+                <p class="text-neutral-400 mb-4">
+                    A classic implementation of the Variable-Sized Bin Packing Problem (VSBPP), built entirely in C++
+                    for high performance.
+                </p>
+                <a href="https://github.com/luiz826/bin-packing" class="text-blue-400 hover:underline">View on
+                    GitHub</a>
+            </div>
+
+            <!-- PROJECT CARD 4 -->
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <!-- Placeholder Image -->
+
+                <h3 class="text-xl font-semibold mb-2">Branch and Bound</h3>
+                <p class="text-neutral-400 mb-4">
+                    An implementation of a classic algorithm for solving integer linear programming problems, built
+                    using Python and MIP.
+                </p>
+                <a href="https://github.com/luiz826/bin-packing" class="text-blue-400 hover:underline">View on
+                    GitHub</a>
+            </div>
+
+            <!-- PROJECT CARD 5 -->
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <!-- Placeholder Image -->
+
+                <h3 class="text-xl font-semibold mb-2">Numpy from Scratch</h3>
+                <p class="text-neutral-400 mb-4">
+                    A ground-up implementation of key NumPy functionalities to manipulate high-dimensional arrays,
+                    developed in C for efficiency.
+                </p>
+                <a href="https://github.com/luiz826/Programacao_Estruturada/tree/main/projeto_final"
+                    class="text-blue-400 hover:underline">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXTRACURRICULAR SECTION -->
+    <section id="extracurricular" class="max-w-5xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-4">Extracurricular</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- EXTRACURRICULAR CARD 1 -->
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <!-- Placeholder Image -->
+                <img href="https://www.instagram.com/trilhaufpb/" src="images/trilha.png" alt="Trilha"
+                    class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg" />
+
+                <h3 class="text-xl font-semibold mb-2">Trilha • 2024 - Present</h3>
+                <p class="text-neutral-400 mb-4">
+                    Serving as a teacher and senior member, helping new tech students at university develop foundational
+                    skills and hands-on experience.
+                </p>
+                <a href="https://www.instagram.com/trilhaufpb/" class="text-blue-400 hover:underline">View on
+                    Instagram</a>
+            </div>
+
+            <!-- EXTRACURRICULAR CARD 2 -->
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <!-- Placeholder Image -->
+                <img src="images/tail.png" alt="TAIL" class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg" />
+
+                <h3 class="text-xl font-semibold mb-2">TAIL • 2021 - 2022</h3>
+                <p class="text-neutral-400 mb-4">
+                    Acted as a member and project leader in the Artificial Intelligence and Technology League at UFPB,
+                    building meaningful projects and forging valuable connections.
+                </p>
+                <a href="https://www.instagram.com/tailufpb/" class="text-blue-400 hover:underline">View on
+                    Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CURRICULUM SECTION -->
+    <section id="curriculum" class="max-w-5xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-4">Curriculum</h2>
+
+        <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+            <!-- Placeholder Image (e.g., for a CV cover or thumbnail) -->
+            <img src="images/resume.png" alt="Curriculum Overview" class="w-full h-50 object-cover rounded mb-4" />
+
+            <!-- Example link to download or view PDF resume -->
+            <a href="docs/curriculo.pdf" class="text-blue-400 hover:underline">View Full CV (PDF)</a>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="max-w-5xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-4">Education</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- EDUCATION CARD 1 -->
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <img src="images/ci.jpg" alt="University Program"
+                    class="w-32 h-32 rounded-full mx-auto mb-4 shadow-lg" />
+                <h3 class="text-xl font-semibold mb-2">BSc in Data Science and Artificial Intelligence</h3>
+                <p class="text-neutral-400 mb-4">Federal University of Paraíba • 2020 - 2025</p>
+                <ul class="list-disc list-inside space-y-2 text-neutral-300 text-sm">
+                    <li>Specialized in Data Science, Machine Learning and Data Engineering</li>
+                    <!-- <li>Graduated with honors, published one research papers</li> -->
+                </ul>
+            </div>
+
+            <!-- EDUCATION CARD 2
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <img src="images/education-2.jpg" alt="Graduate Studies"
+                    class="w-full h-32 object-cover rounded mb-4" />
+                <h3 class="text-xl font-semibold mb-2">MSc in Artificial Intelligence</h3>
+                <p class="text-neutral-400 mb-4">University Name • 2022 - Present</p>
+                <ul class="list-disc list-inside space-y-2 text-neutral-300 text-sm">
+                    <li>Researching next-gen deep learning techniques</li>
+                    <li>Collaborating on industry-driven AI projects</li>
+                </ul>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS & COURSES SECTION -->
+    <section id="certifications" class="max-w-5xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-4">Certifications &amp; Courses</h2>
+        <p class="text-neutral-200 mb-6 leading-relaxed">
+            List any professional certifications or special courses you've completed here.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- CERTIFICATION CARD 1 -->
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <img src="images/huawei_cert.jpeg" alt="Certification 1"
+                    class="w-full h-32 object-cover rounded mb-4" />
+                <h3 class="text-xl font-semibold mb-2">Huawei HCIA AI 3.0 Certification</h3>
+                <p class="text-neutral-400 mb-4">
+                    Earned an advanced understanding of AI and neural networks.
+                </p>
+            </div>
+
+            <!-- CERTIFICATION CARD 2 -->
+            <div class="bg-neutral-800 p-6 rounded shadow hover:shadow-lg transition">
+                <img src="images/deep_learning.jpeg" alt="Certification 2"
+                    class="w-full h-32 object-cover rounded mb-4" />
+                <h3 class="text-xl font-semibold mb-2">Neural Networks and Deep Learning Specialization</h3>
+                <p class="text-neutral-400 mb-4">
+                    Completed an intensive series of courses covering neural networks in an advanced perspective.
+                </p>
+                <a href="#" class="text-blue-400 hover:underline">View Certificate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="max-w-3xl mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold mb-4">Contact me.</h2>
+        <p class="text-neutral-200 mb-6 leading-relaxed">
+            I’m always eager to explore new opportunities and take on exciting projects.
+            If you have something in mind—or simply want to say hello—feel free to reach out.
+        </p>
+        <div class="flex flex-wrap gap-4">
+            <a href="mailto:luizfernando1012000@gmail.com"
+                class="bg-neutral-700 hover:bg-neutral-600 px-4 py-2 rounded text-sm font-semibold text-white transition">
+                @ Email →
+            </a>
+            <a href="https://www.linkedin.com/in/luiz-fernando632/"
+                class="bg-indigo-600 hover:bg-indigo-500 px-4 py-2 rounded text-sm font-semibold text-white transition">
+                Linkedin →
+            </a>
+            <a href="https://www.instagram.com/luiz_fernando.ipynb/"
+                class="bg-pink-600 hover:bg-pink-500 px-4 py-2 rounded text-sm font-semibold text-white transition">
+                Instagram →
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-neutral-900 border-t border-neutral-800 mt-auto">
+        <div class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Copyright -->
+            <div class="md:col-span-1 text-sm text-neutral-500">
+                <p>Copyright © 2025
+                    Luiz Fernando Costa dos Santos</p>
+            </div>
+            <!-- Important Links -->
+            <div>
+                <h3 class="text-neutral-100 font-semibold mb-2">Important Links</h3>
+                <ul class="text-neutral-400 text-sm space-y-1">
+                    <li><a href="#home" class="hover:text-neutral-200">Home</a></li>
+                    <li><a href="#projects" class="hover:text-neutral-200">Projects</a></li>
+                    <li><a href="#experience" class="hover:text-neutral-200">Experience</a></li>
+                    <li><a href="#extracurricular" class="hover:text-neutral-200">Extracurricular</a></li>
+                    <li><a href="#curriculum" class="hover:text-neutral-200">Curriculum</a></li>
+                    <li><a href="#education" class="hover:text-neutral-200">Education</a></li>
+                    <li><a href="#certifications" class="hover:text-neutral-200">Certifications</a></li>
+                </ul>
+            </div>
+            <!-- Social Links -->
+            <div>
+                <h3 class="text-neutral-100 font-semibold mb-2">Social</h3>
+                <ul class="text-neutral-400 text-sm space-y-1">
+                    <li><a href="https://github.com/luiz826" class="hover:text-neutral-200">Github</a></li>
+                    <li><a href="https://www.instagram.com/luiz_fernando.ipynb/"
+                            class="hover:text-neutral-200">Instagram</a></li>
+                    <li><a href="https://www.linkedin.com/in/luiz-fernando632/"
+                            class="hover:text-neutral-200">Linkedin</a></li>
+                </ul>
+            </div>
+            <!-- Other Links -->
+            <div>
+                <h3 class="text-neutral-100 font-semibold mb-2">Other</h3>
+                <ul class="text-neutral-400 text-sm space-y-1">
+                    <li><a href="#contact" class="hover:text-neutral-200">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript for dropdown, etc. -->
+    <script>
+        const moreMenuBtn = document.getElementById('moreMenuBtn');
+        const dropdownMenu = document.getElementById('dropdownMenu');
+
+        moreMenuBtn.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+
+</html>
