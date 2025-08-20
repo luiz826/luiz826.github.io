@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Projects - Luiz Fernando</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS (official CDN script) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Charter and Inter for Medium-like typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Charter', 'Georgia', 'serif'],
+                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-900 min-h-screen flex flex-col font-sans leading-relaxed">
+
+    <!-- NAVIGATION -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo / Name -->
+            <div class="font-serif font-bold text-2xl text-gray-900">
+                <a href="../index.html">Luiz Fernando</a>
+            </div>
+            <!-- Nav Links -->
+            <nav>
+                <ul class="flex items-center space-x-8 text-sm font-medium">
+                    <li><a href="../index.html" class="text-gray-700 hover:text-gray-900 transition">Home</a></li>
+                    <li><a href="experience.html" class="text-gray-700 hover:text-gray-900 transition">Experience</a></li>
+                    <li><a href="projects.html" class="text-gray-900 border-b-2 border-gray-900">Projects</a></li>
+                    <li><a href="extracurricular.html" class="text-gray-700 hover:text-gray-900 transition">Extracurricular</a></li>
+                    <li><a href="curriculum.html" class="text-gray-700 hover:text-gray-900 transition">Curriculum</a></li>
+                    <li><a href="education.html" class="text-gray-700 hover:text-gray-900 transition">Education</a></li>
+                    <li><a href="certifications.html" class="text-gray-700 hover:text-gray-900 transition">Certifications</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PROJECTS SECTION -->
+    <main class="flex-grow page-container">
+        <div class="section-header">
+            <h1 class="section-title">Projects</h1>
+            <p class="section-description">
+                A showcase of my technical projects and contributions across different domains.
+            </p>
+        </div>
+        
+        <div class="space-y-16">
+            <!-- PROJECT 1: PUMLE -->
+            <article class="content-card">
+                <div class="grid lg:grid-cols-2 gap-8 items-start">
+                    <!-- Large Image/Visual Section -->
+                    <div class="w-full">
+                        <div class="aspect-[4/3] bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border border-blue-200 overflow-hidden shadow-sm">
+                            <img src="../assets/images/projects/gif-pumle.gif" alt="PUMLE Project Demo" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                    
+                    <!-- Content Section -->
+                    <div class="w-full">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="font-serif text-3xl font-bold text-gray-900">PUMLE</h3>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded-full">Data Engineering</span>
+                        </div>
+                        
+                        <div class="prose prose-gray max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                                🌍 <strong>Innovative data pipeline</strong> for geological carbon storage in Brazilian reservoirs. 
+                                PUMLE transforms complex simulation outputs into streamlined multidimensional arrays, making 
+                                environmental data accessible and actionable.
+                            </p>
+                            
+                            <div class="space-y-4 mb-6">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-900 mb-3">✨ Key Features:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-2">
+                                        <li>• Multi-format export (NumPy, Zarr, MAT-files, CSV)</li>
+                                        <li>• Cloud integration for seamless data sharing</li>
+                                        <li>• Optimized for large-scale geological simulations</li>
+                                        <li>• Built for environmental impact analysis</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Python</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">NumPy</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Zarr</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Cloud Storage</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-4">
+                                <a href="https://github.com/luiz826/PUMLE" 
+                                   class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
+                                    <span class="mr-2">📖</span> View on GitHub
+                                </a>
+                                <span class="text-gray-500 text-sm">Open Source Project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 2: Car Plate Detection -->
+            <article class="content-card">
+                <div class="grid lg:grid-cols-2 gap-8 items-start">
+                    <!-- Large Image/Visual Section -->
+                    <div class="w-full">
+                        <div class="aspect-[4/3] bg-gradient-to-br from-green-50 to-green-100 rounded-xl border border-green-200 overflow-hidden shadow-sm flex items-center justify-center">
+                            
+                            <img src="../assets/images/projects/car-plate_gif.gif" alt="Car Plate Detection Project Demo" class="w-full h-full object-cover" />
+                            
+                        </div>
+                    </div>
+                    
+                    <!-- Content Section -->
+                    <div class="w-full">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="font-serif text-3xl font-bold text-gray-900">Car Plate Detection</h3>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">Computer Vision</span>
+                        </div>
+                        
+                        <div class="prose prose-gray max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                                🎯 <strong>Intelligent license plate recognition</strong> system powered by YOLO deep learning architecture. 
+                                Specifically designed for Brazilian vehicle registration patterns with high accuracy and real-time processing capabilities.
+                            </p>
+                            
+                            <div class="space-y-4 mb-6">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-900 mb-3">🚀 Technical Highlights:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-2">
+                                        <li>• YOLO-based object detection for precise plate localization</li>
+                                        <li>• Character recognition optimized for Brazilian formats</li>
+                                        <li>• Real-time processing with high accuracy rates</li>
+                                        <li>• Robust to various lighting and weather conditions</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-green-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Python</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">YOLO</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">OpenCV</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Deep Learning</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-4">
+                                <a href="https://github.com/luiz826/plate-detection" 
+                                   class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
+                                    <span class="mr-2">📖</span> View on GitHub
+                                </a>
+                                <span class="text-gray-500 text-sm">Computer Vision Project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 3: Bin Packing -->
+            <article class="content-card">
+                <div class="grid lg:grid-cols-2 gap-8 items-start">
+                    <!-- Large Image/Visual Section -->
+                    <div class="w-full">
+                        <div class="aspect-[4/3] bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl border border-purple-200 overflow-hidden shadow-sm flex items-center justify-center">
+                            <div class="text-center p-8">
+                                <img src="../assets/images/projects/bin-packing.jpg" alt="Bin Packing Project Demo" class="w-full h-full object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Content Section -->
+                    <div class="w-full">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="font-serif text-3xl font-bold text-gray-900">Bin Packing Optimizer</h3>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-medium rounded-full">Algorithms</span>
+                        </div>
+                        
+                        <div class="prose prose-gray max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                                ⚡ <strong>High-performance solution</strong> to the Variable-Sized Bin Packing Problem (VSBPP). 
+                                Built from scratch in C++ to achieve optimal space utilization with minimal computational overhead, 
+                                perfect for logistics and resource allocation challenges.
+                            </p>
+                            
+                            <div class="space-y-4 mb-6">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-900 mb-3">💡 Algorithm Features:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-2">
+                                        <li>• Optimized C++ implementation for maximum speed</li>
+                                        <li>• Variable-sized container support</li>
+                                        <li>• Multiple heuristic strategies</li>
+                                        <li>• Scalable for large dataset processing</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">C++</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Algorithms</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Optimization</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Data Structures</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-4">
+                                <a href="https://github.com/luiz826/bin-packing" 
+                                   class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
+                                    <span class="mr-2">📖</span> View on GitHub
+                                </a>
+                                <span class="text-gray-500 text-sm">Algorithm Implementation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 4: Branch and Bound -->
+            <article class="content-card">
+                <div class="grid lg:grid-cols-2 gap-8 items-start">
+                    <!-- Large Image/Visual Section -->
+                    <div class="w-full">
+                        <div class="aspect-[4/3] bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl border border-orange-200 overflow-hidden shadow-sm flex items-center justify-center">
+                            <div class="text-center p-8">
+                                <img src="../assets/images/projects/bb.png" alt="Branch and Bound Project Demo" class="w-full h-full object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Content Section -->
+                    <div class="w-full">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="font-serif text-3xl font-bold text-gray-900">Branch and Bound</h3>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 text-sm font-medium rounded-full">Optimization</span>
+                        </div>
+                        
+                        <div class="prose prose-gray max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                                🧮 <strong>Mathematical optimization powerhouse</strong> implementing the classic Branch and Bound algorithm. 
+                                Designed to solve complex integer linear programming problems with guaranteed optimal solutions, 
+                                leveraging Python's MIP library for robust performance.
+                            </p>
+                            
+                            <div class="space-y-4 mb-6">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-900 mb-3">🔬 Mathematical Excellence:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-2">
+                                        <li>• Classic Branch and Bound implementation</li>
+                                        <li>• Integer linear programming solver</li>
+                                        <li>• Optimal solution guarantees</li>
+                                        <li>• Educational and practical applications</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-orange-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Python</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">MIP</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Linear Programming</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Mathematics</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-4">
+                                <a href="https://github.com/luiz826/branch_and_bound" 
+                                   class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
+                                    <span class="mr-2">📖</span> View on GitHub
+                                </a>
+                                <span class="text-gray-500 text-sm">Mathematical Algorithm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PROJECT 5: NumPy from Scratch -->
+            <article class="content-card">
+                <div class="grid lg:grid-cols-2 gap-8 items-start">
+                    <!-- Large Image/Visual Section -->
+                    <div class="w-full">
+                        <div class="aspect-[4/3] bg-gradient-to-br from-red-50 to-red-100 rounded-xl border border-red-200 overflow-hidden shadow-sm flex items-center justify-center">
+                            <div class="text-center p-8">
+                                <img src="../assets/images/projects/numpy.svg" alt="NumPy from Scratch Project Demo" class="w-full h-full object-cover" />
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Content Section -->
+                    <div class="w-full">
+                        <div class="flex items-center gap-3 mb-4">
+                            <h3 class="font-serif text-3xl font-bold text-gray-900">NumPy from Scratch</h3>
+                            <span class="px-3 py-1 bg-red-100 text-red-700 text-sm font-medium rounded-full">Low-Level</span>
+                        </div>
+                        
+                        <div class="prose prose-gray max-w-none">
+                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
+                                🛠️ <strong>Ground-up recreation</strong> of NumPy's core functionality using pure C programming. 
+                                This project demonstrates deep understanding of memory management, array operations, and 
+                                performance optimization in scientific computing libraries.
+                            </p>
+                            
+                            <div class="space-y-4 mb-6">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-900 mb-3">⚙️ Engineering Excellence:</h4>
+                                    <ul class="text-sm text-gray-700 space-y-2">
+                                        <li>• Pure C implementation for maximum control</li>
+                                        <li>• High-dimensional array manipulation</li>
+                                        <li>• Memory-efficient data structures</li>
+                                        <li>• Core mathematical operations</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="bg-red-50 p-4 rounded-lg">
+                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">C</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Memory Management</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Arrays</span>
+                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Performance</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center gap-4">
+                                <a href="https://github.com/luiz826/Programacao_Estruturada/tree/main/projeto_final" 
+                                   class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
+                                    <span class="mr-2">📖</span> View on GitHub
+                                </a>
+                                <span class="text-gray-500 text-sm">System Programming Project</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-gray-200 py-8">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center">
+                <p class="text-gray-600 text-sm">
+                    © 2025 Luiz Fernando Costa dos Santos. All rights reserved.
+                </p>
+                <div class="flex justify-center space-x-6 mt-4">
+                    <a href="../index.html" class="text-gray-500 hover:text-gray-700 text-sm transition">Home</a>
+                    <a href="projects.html" class="text-gray-500 hover:text-gray-700 text-sm transition">Projects</a>
+                    <a href="experience.html" class="text-gray-500 hover:text-gray-700 text-sm transition">Experience</a>
+                    <a href="index.html#contact" class="text-gray-500 hover:text-gray-700 text-sm transition">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
