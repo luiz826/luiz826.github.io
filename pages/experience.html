@@ -3,16 +3,24 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Experience - Luiz Fernando</title>
+    <title>Experience | Luiz Fernando</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Tailwind CSS (official CDN script) -->
+    <meta name="description"
+        content="Professional experience of Luiz Fernando, featuring roles at Nubank, MGITech, and Huawei/Embrapii.">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Charter and Inter for Medium-like typography -->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Custom styles -->
     <link rel="stylesheet" href="../assets/css/styles.css">
+
     <script>
         tailwind.config = {
             theme: {
@@ -20,6 +28,10 @@
                     fontFamily: {
                         'serif': ['Charter', 'Georgia', 'serif'],
                         'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#6366f1',
                     }
                 }
             }
@@ -27,124 +39,238 @@
     </script>
 </head>
 
-<body class="bg-white text-gray-900 min-h-screen flex flex-col font-sans leading-relaxed">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-100 selection:text-indigo-900">
 
     <!-- NAVIGATION -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
-        <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-            <!-- Logo / Name -->
-            <div class="font-serif font-bold text-2xl text-gray-900">
-                <a href="../index.html">Luiz Fernando</a>
-            </div>
-            <!-- Nav Links -->
-            <nav>
-                <ul class="flex items-center space-x-8 text-sm font-medium">
-                    <li><a href="../index.html" class="text-gray-700 hover:text-gray-900 transition">Home</a></li>
-                    <li><a href="experience.html" class="text-gray-900 border-b-2 border-gray-900">Experience</a></li>
-                    <li><a href="projects.html" class="text-gray-700 hover:text-gray-900 transition">Projects</a></li>
-                    <li><a href="extracurricular.html" class="text-gray-700 hover:text-gray-900 transition">Extracurricular</a></li>
-                    <li><a href="curriculum.html" class="text-gray-700 hover:text-gray-900 transition">Curriculum</a></li>
-                    <li><a href="education.html" class="text-gray-700 hover:text-gray-900 transition">Education</a></li>
-                    <li><a href="certifications.html" class="text-gray-700 hover:text-gray-900 transition">Certifications</a></li>
+    <header
+        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="../index.html"
+                class="font-serif font-bold text-2xl text-slate-900 tracking-tight hover:text-indigo-600 transition-colors">
+                Luiz Fernando
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:block">
+                <ul class="flex items-center space-x-8 text-sm font-medium text-slate-600">
+                    <li><a href="../index.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Home</a></li>
+                    <li><a href="projects.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Projects</a></li>
+                    <li><a href="experience.html" class="text-indigo-600 font-semibold">Experience</a></li>
+                    <li><a href="extracurricular.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Extracurricular</a>
+                    </li>
+                    <li><a href="curriculum.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Curriculum</a></li>
+                    <li><a href="education.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Education</a></li>
+                    <li><a href="certifications.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Certifications</a></li>
                 </ul>
             </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-slate-600 hover:text-slate-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </div>
     </header>
 
-    <!-- EXPERIENCE SECTION -->
     <main class="flex-grow page-container">
-        <div class="section-header">
+        <div class="section-header animate-fade-in">
             <h1 class="section-title">Professional Experience</h1>
             <p class="section-description">
-                A journey through my professional roles, where I've applied my skills to solve real-world problems and create meaningful impact.
+                A journey through my professional roles, where I've applied my skills to solve real-world problems and
+                create meaningful impact.
             </p>
         </div>
-        
-        <div class="space-y-8">
-            <!-- EXPERIENCE CARD 1 -->
-            <article class="content-card">
-                <div class="flex items-start space-x-6 mb-6">
-                                        <img src="../assets/images/companies/nubank-logo-2.png" alt="Nubank" class="w-16 h-16 object-contain rounded-lg border border-gray-200" />
-                    <div>
-                        <h3 class="font-serif text-xl font-bold text-gray-900 mb-1">Machine Learning Engineer</h3>
-                        <p class="text-gray-600 font-medium">Nubank</p>
-                        <p class="text-gray-500 text-sm">2022 - Present</p>
+
+        <div class="space-y-8 max-w-4xl mx-auto animate-fade-in delay-200">
+
+            <!-- EXPERIENCE CARD 1: Nubank -->
+            <article class="content-card relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-indigo-500"></div>
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div
+                            class="w-16 h-16 rounded-xl bg-white border border-slate-200 p-2 shadow-sm flex items-center justify-center">
+                            <img src="../assets/images/companies/nubank-logo-2.png" alt="Nubank Logo"
+                                class="w-full h-full object-contain" />
+                        </div>
                     </div>
-                </div>
-                <div class="prose">
-                    <p class="text-gray-700 leading-relaxed mb-3">
-                        Implemented and deployed risk and spending ML models in both online and batch environments, 
-                        increasing predictive performance and business value for millions of customers.
-                    </p>
-                    <p class="text-gray-700 leading-relaxed">
-                        Developed a comprehensive monitoring platform using Spark Scala for key metrics, streamlining 
-                        dataset creation and enhancing analytics capabilities for stakeholders across the organization.
-                    </p>
+
+                    <div class="flex-grow w-full">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
+                            <div>
+                                <h3 class="font-serif text-xl font-bold text-slate-900">Machine Learning Engineer</h3>
+                                <div class="text-indigo-600 font-medium">Nubank</div>
+                            </div>
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 whitespace-nowrap">
+                                2022 - Present
+                            </span>
+                        </div>
+
+                        <div class="prose prose-slate max-w-none mt-4">
+                            <p class="text-slate-600 leading-relaxed mb-3">
+                                Implemented and deployed risk and spending ML models in both online and batch
+                                environments,
+                                increasing predictive performance and business value for millions of customers.
+                            </p>
+                            <p class="text-slate-600 leading-relaxed">
+                                Developed a comprehensive monitoring platform using Spark Scala for key metrics,
+                                streamlining
+                                dataset creation and enhancing analytics capabilities for stakeholders across the
+                                organization.
+                            </p>
+                        </div>
+
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Machine
+                                Learning</span>
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Spark
+                                Scala</span>
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Model
+                                Deployment</span>
+                        </div>
+                    </div>
                 </div>
             </article>
 
-            <!-- EXPERIENCE CARD 2 -->
-            <article class="content-card">
-                <div class="flex items-start space-x-4 mb-4">
-                    <img src="../assets/images/companies/mgitech-logo.jpeg" alt="MGITech" class="w-16 h-16 rounded-lg object-cover flex-shrink-0" />
-                    <div>
-                        <h3 class="font-serif text-xl font-bold text-gray-900 mb-1">Data Engineer</h3>
-                        <p class="text-gray-600 font-medium">MGITech/Lagid</p>
-                        <p class="text-gray-500 text-sm">2021 - 2022</p>
+            <!-- EXPERIENCE CARD 2: MGITech -->
+            <article class="content-card relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-slate-300"></div>
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-xl bg-white border border-slate-200 overflow-hidden shadow-sm">
+                            <img src="../assets/images/companies/mgitech-logo.jpeg" alt="MGITech Logo"
+                                class="w-full h-full object-cover" />
+                        </div>
                     </div>
-                </div>
-                <div class="prose">
-                    <p class="text-gray-700 leading-relaxed">
-                        Built robust ETL pipelines from transactional SQL databases to business dashboards, 
-                        significantly improving the company's analytical capabilities and data-driven decision making processes.
-                    </p>
+
+                    <div class="flex-grow w-full">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
+                            <div>
+                                <h3 class="font-serif text-xl font-bold text-slate-900">Data Engineer</h3>
+                                <div class="text-slate-600 font-medium">MGITech / Lagid</div>
+                            </div>
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 whitespace-nowrap">
+                                2021 - 2022
+                            </span>
+                        </div>
+
+                        <div class="prose prose-slate max-w-none mt-4">
+                            <p class="text-slate-600 leading-relaxed">
+                                Built robust ETL pipelines from transactional SQL databases to business dashboards,
+                                significantly improving the company's analytical capabilities and data-driven decision
+                                making processes.
+                            </p>
+                        </div>
+
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">ETL
+                                Pipelines</span>
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">SQL</span>
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Data
+                                Engineering</span>
+                        </div>
+                    </div>
                 </div>
             </article>
 
-            <!-- EXPERIENCE CARD 3 -->
-            <article class="content-card">
-                <div class="flex items-start space-x-4 mb-4">
-                    <img src="../assets/images/companies/embrapii-logo.jpeg" alt="Huawei/Embrapii" class="w-16 h-16 rounded-lg object-cover flex-shrink-0" />
-                    <div>
-                        <h3 class="font-serif text-xl font-bold text-gray-900 mb-1">Data Scientist</h3>
-                        <p class="text-gray-600 font-medium">Huawei/Embrapii</p>
-                        <p class="text-gray-500 text-sm">2021 - 2022</p>
+            <!-- EXPERIENCE CARD 3: Huawei -->
+            <article class="content-card relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-slate-300"></div>
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-xl bg-white border border-slate-200 overflow-hidden shadow-sm">
+                            <img src="../assets/images/companies/embrapii-logo.jpeg" alt="Huawei Logo"
+                                class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+
+                    <div class="flex-grow w-full">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
+                            <div>
+                                <h3 class="font-serif text-xl font-bold text-slate-900">Data Scientist</h3>
+                                <div class="text-slate-600 font-medium">Huawei / Embrapii</div>
+                            </div>
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 whitespace-nowrap">
+                                2021 - 2022
+                            </span>
+                        </div>
+
+                        <div class="prose prose-slate max-w-none mt-4">
+                            <p class="text-slate-600 leading-relaxed mb-3">
+                                Collected and refined sensor data for optimized positioning of solar panels at a
+                                photovoltaic
+                                generation plant, contributing to renewable energy efficiency research.
+                            </p>
+                            <p class="text-slate-600 leading-relaxed mb-3">
+                                Stored time-series data in NoSQL databases, enabling real-time analysis and performance
+                                insights for energy optimization.
+                            </p>
+                            <p class="text-slate-600 leading-relaxed">
+                                Modeled and trained high-accuracy machine learning models to maximize energy output and
+                                operational efficiency in solar energy systems.
+                            </p>
+                        </div>
+
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Data
+                                Science</span>
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">NoSQL</span>
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Renewable
+                                Energy</span>
+                        </div>
                     </div>
                 </div>
-                <div class="prose">
-                    <p class="text-gray-700 leading-relaxed mb-3">
-                        Collected and refined sensor data for optimized positioning of solar panels at a photovoltaic 
-                        generation plant, contributing to renewable energy efficiency research.
-                    </p>
-                    <p class="text-gray-700 leading-relaxed mb-3">
-                        Stored time-series data in NoSQL databases, enabling real-time analysis and performance 
-                        insights for energy optimization.
-                    </p>
-                    <p class="text-gray-700 leading-relaxed">
-                        Modeled and trained high-accuracy machine learning models to maximize energy output and 
-                        operational efficiency in solar energy systems.
-                    </p>
-                </div>
             </article>
+
         </div>
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-white border-t border-gray-200 py-8">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center">
-                <p class="text-gray-600 text-sm">
-                    © 2025 Luiz Fernando Costa dos Santos. All rights reserved.
-                </p>
-                <div class="flex justify-center space-x-6 mt-4">
-                    <a href="../index.html" class="text-gray-500 hover:text-gray-700 text-sm transition">Home</a>
-                    <a href="projects.html" class="text-gray-500 hover:text-gray-700 text-sm transition">Projects</a>
-                    <a href="experience.html" class="text-gray-500 hover:text-gray-700 text-sm transition">Experience</a>
-                    <a href="../index.html#contact" class="text-gray-500 hover:text-gray-700 text-sm transition">Contact</a>
+    <footer class="bg-white border-t border-slate-200 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <span class="font-serif font-bold text-xl text-slate-900">Luiz Fernando</span>
+                    <p class="text-slate-500 text-sm mt-2">
+                        © 2025 Luiz Fernando Costa dos Santos. All rights reserved.
+                    </p>
+                </div>
+
+                <div class="flex space-x-8">
+                    <a href="../index.html"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Home</a>
+                    <a href="projects.html"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Projects</a>
+                    <a href="experience.html"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Experience</a>
+                    <a href="../index.html#contact"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Contact</a>
                 </div>
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>

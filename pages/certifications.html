@@ -3,16 +3,24 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Certifications - Luiz Fernando</title>
+    <title>Certifications | Luiz Fernando</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Tailwind CSS (official CDN script) -->
+    <meta name="description"
+        content="Professional certifications of Luiz Fernando, including Machine Learning, Deep Learning, and Cloud Computing.">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Charter and Inter for Medium-like typography -->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Custom styles -->
     <link rel="stylesheet" href="../assets/css/styles.css">
+
     <script>
         tailwind.config = {
             theme: {
@@ -20,6 +28,10 @@
                     fontFamily: {
                         'serif': ['Charter', 'Georgia', 'serif'],
                         'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#6366f1',
                     }
                 }
             }
@@ -27,170 +39,217 @@
     </script>
 </head>
 
-<body class="bg-white text-gray-900 min-h-screen flex flex-col font-sans leading-relaxed">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-100 selection:text-indigo-900">
 
     <!-- NAVIGATION -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
-        <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-            <!-- Logo / Name -->
-            <div class="font-serif font-bold text-2xl text-gray-900">
-                <a href="../index.html">Luiz Fernando</a>
-            </div>
-            <!-- Nav Links -->
-            <nav>
-                <ul class="flex items-center space-x-8 text-sm font-medium">
-                    <li><a href="../index.html" class="text-gray-700 hover:text-gray-900 transition">Home</a></li>
-                    <li><a href="experience.html" class="text-gray-700 hover:text-gray-900 transition">Experience</a></li>
-                    <li><a href="projects.html" class="text-gray-700 hover:text-gray-900 transition">Projects</a></li>
-                    <li><a href="extracurricular.html" class="text-gray-700 hover:text-gray-900 transition">Extracurricular</a></li>
-                    <li><a href="curriculum.html" class="text-gray-700 hover:text-gray-900 transition">Curriculum</a></li>
-                    <li><a href="education.html" class="text-gray-700 hover:text-gray-900 transition">Education</a></li>
-                    <li><a href="certifications.html" class="text-gray-900 border-b-2 border-gray-900">Certifications</a></li>
+    <header
+        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="../index.html"
+                class="font-serif font-bold text-2xl text-slate-900 tracking-tight hover:text-indigo-600 transition-colors">
+                Luiz Fernando
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:block">
+                <ul class="flex items-center space-x-8 text-sm font-medium text-slate-600">
+                    <li><a href="../index.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Home</a></li>
+                    <li><a href="projects.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Projects</a></li>
+                    <li><a href="experience.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Experience</a></li>
+                    <li><a href="extracurricular.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Extracurricular</a>
+                    </li>
+                    <li><a href="curriculum.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Curriculum</a></li>
+                    <li><a href="education.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Education</a></li>
+                    <li><a href="certifications.html" class="text-indigo-600 font-semibold">Certifications</a></li>
                 </ul>
             </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-slate-600 hover:text-slate-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </div>
     </header>
 
-    <!-- CERTIFICATIONS SECTION -->
     <main class="flex-grow page-container">
-        <div class="section-header">
+        <div class="section-header animate-fade-in">
             <h1 class="section-title">Certifications</h1>
             <p class="section-description">
                 Professional certifications that validate my expertise in machine learning and technology.
             </p>
         </div>
-        
-        <div class="grid gap-8 md:grid-cols-2">
+
+        <div class="grid gap-8 md:grid-cols-2 animate-fade-in delay-200">
+
             <!-- ML in Production Certification -->
-            <article class="content-card">
-                <div class="text-center">
-                    <img src="../assets/images/certifications/mlprod_cert.jpeg" alt="ML in Production Certification" 
-                         class="w-full h-64 object-cover rounded-lg mb-6 border border-gray-200" />
-                    
-                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-3">
+            <article class="content-card flex flex-col h-full">
+                <div class="relative h-48 -mx-6 -mt-6 mb-6 overflow-hidden border-b border-slate-100">
+                    <img src="../assets/images/certifications/mlprod_cert.jpeg" alt="ML in Production Certification"
+                        class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
+                </div>
+
+                <div class="flex-grow">
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">
                         Machine Learning in Production
                     </h3>
-                    <p class="text-gray-600 font-medium mb-4">
+                    <p class="text-indigo-600 font-medium text-sm mb-4">
                         DeepLearning.AI • Coursera
                     </p>
-                    <div class="prose prose-gray text-sm max-w-none">
-                        <p>
-                            Advanced specialization focused on deploying, monitoring, and maintaining 
+                    <div class="prose prose-slate text-sm max-w-none">
+                        <p class="mb-3 text-slate-600">
+                            Advanced specialization focused on deploying, monitoring, and maintaining
                             machine learning systems in production environments.
                         </p>
-                        <p>
-                            <strong>Key Skills:</strong> MLOps, Model Deployment, Production Monitoring, TensorFlow Extended
-                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">MLOps</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Model Deployment</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">TFX</span>
+                        </div>
                     </div>
                 </div>
             </article>
 
             <!-- Deep Learning Certification -->
-            <article class="content-card">
-                <div class="text-center">
-                    <img src="../assets/images/certifications/deep_learning.jpeg" alt="Deep Learning Certification" 
-                         class="w-full h-64 object-cover rounded-lg mb-6 border border-gray-200" />
-                    
-                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-3">
+            <article class="content-card flex flex-col h-full">
+                <div class="relative h-48 -mx-6 -mt-6 mb-6 overflow-hidden border-b border-slate-100">
+                    <img src="../assets/images/certifications/deep_learning.jpeg" alt="Deep Learning Certification"
+                        class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
+                </div>
+
+                <div class="flex-grow">
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">
                         Deep Learning Specialization
                     </h3>
-                    <p class="text-gray-600 font-medium mb-4">
+                    <p class="text-indigo-600 font-medium text-sm mb-4">
                         DeepLearning.AI • Coursera
                     </p>
-                    <div class="prose prose-gray text-sm max-w-none">
-                        <p>
-                            Comprehensive specialization covering neural networks, deep learning fundamentals, 
+                    <div class="prose prose-slate text-sm max-w-none">
+                        <p class="mb-3 text-slate-600">
+                            Comprehensive specialization covering neural networks, deep learning fundamentals,
                             convolutional networks, sequence models, and practical implementation using TensorFlow.
                         </p>
-                        <p>
-                            <strong>Key Skills:</strong> Neural Networks, CNNs, RNNs, TensorFlow, Hyperparameter Tuning
-                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Neural Networks</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">TensorFlow</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">CNNs/RNNs</span>
+                        </div>
                     </div>
                 </div>
             </article>
 
             <!-- Huawei Certification -->
-            <article class="content-card">
-                <div class="text-center">
-                    <img src="../assets/images/certifications/huawei_cert.jpeg" alt="Huawei Certification" 
-                         class="w-full h-64 object-cover rounded-lg mb-6 border border-gray-200" />
-                    
-                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-3">
+            <article class="content-card flex flex-col h-full">
+                <div class="relative h-48 -mx-6 -mt-6 mb-6 overflow-hidden border-b border-slate-100">
+                    <img src="../assets/images/certifications/huawei_cert.jpeg" alt="Huawei Certification"
+                        class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
+                </div>
+
+                <div class="flex-grow">
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">
                         Huawei Certified HCIA 3.0
                     </h3>
-                    <p class="text-gray-600 font-medium mb-4">
+                    <p class="text-indigo-600 font-medium text-sm mb-4">
                         Huawei Technologies
                     </p>
-                    <div class="prose prose-gray text-sm max-w-none">
-                        <p>
-                            Earned an advanced understanding of AI and neural networks through comprehensive training and examination.
+                    <div class="prose prose-slate text-sm max-w-none">
+                        <p class="mb-3 text-slate-600">
+                            Earned an advanced understanding of AI and neural networks through comprehensive training
+                            and examination.
                         </p>
-                        <p>
-                            <strong>Key Skills:</strong>  Neural Networks, CNNs, RNNs, Hyperparameter Tuning
-                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">AI Fundamentals</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Neural Networks</span>
+                        </div>
                     </div>
                 </div>
             </article>
 
-            <article class="content-card">
-                <div class="text-center">
-                    <img src="../assets/images/certifications/CS50x.png" alt="CS50x Certification" 
-                         class="w-full h-64 object-cover rounded-lg mb-6 border border-gray-200" />
-                    
-                    <h3 class="font-serif text-xl font-bold text-gray-900 mb-3">
+            <!-- CS50x Certification -->
+            <article class="content-card flex flex-col h-full">
+                <div class="relative h-48 -mx-6 -mt-6 mb-6 overflow-hidden border-b border-slate-100">
+                    <img src="../assets/images/certifications/CS50x.png" alt="CS50x Certification"
+                        class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500" />
+                </div>
+
+                <div class="flex-grow">
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-2">
                         CS50x: Introduction to Computer Science
                     </h3>
-                    <p class="text-gray-600 font-medium mb-4">
+                    <p class="text-indigo-600 font-medium text-sm mb-4">
                         Harvard University • edX
                     </p>
-                    <p class="text-gray-600 font-medium mb-4">
-                        Self-Directed Learning
-                    </p>
-                    <div class="prose prose-gray text-sm max-w-none">
-                        <p>
-                            Completed an in-depth exploration of computer science fundamentals, programming languages, and software development principles.
+                    <div class="prose prose-slate text-sm max-w-none">
+                        <p class="mb-3 text-slate-600">
+                            Completed an in-depth exploration of computer science fundamentals, programming languages,
+                            and software development principles.
                         </p>
-                        <p>
-                            <strong>Key Skills:</strong>  Python, JavaScript, HTML/CSS, SQL
-                        </p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">C/Python</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Algorithms</span>
+                            <span class="px-2 py-1 bg-slate-100 text-slate-600 text-xs rounded">Web Dev</span>
+                        </div>
                     </div>
                 </div>
-            </article> 
+            </article>
+
         </div>
 
         <!-- Certification Benefits -->
-        <article class="content-card mt-8">
-            <h3 class="font-serif text-2xl font-bold text-gray-900 mb-4 text-center">
-                Commitment to Excellence
-            </h3>
-            <div class="prose prose-gray max-w-none text-center">
-                <p>
-                    These certifications represent my dedication to staying current with industry best practices 
-                    and emerging technologies. Each certification has enhanced my ability to deliver high-quality 
-                    solutions and contribute meaningfully to technical teams.
-                </p>
-                <p>
-                    I believe in the value of both formal education and continuous professional development, 
-                    ensuring that my skills remain sharp and relevant in our rapidly evolving technology landscape.
-                </p>
-            </div>
-        </article>
+        <div class="mt-12 animate-fade-in delay-300">
+            <article class="bg-indigo-900 rounded-2xl p-8 md:p-12 text-center text-white shadow-xl">
+                <h3 class="font-serif text-2xl font-bold mb-4">
+                    Commitment to Excellence
+                </h3>
+                <div class="max-w-3xl mx-auto text-indigo-100 leading-relaxed space-y-4">
+                    <p>
+                        These certifications represent my dedication to staying current with industry best practices
+                        and emerging technologies. Each certification has enhanced my ability to deliver high-quality
+                        solutions and contribute meaningfully to technical teams.
+                    </p>
+                    <p>
+                        I believe in the value of both formal education and continuous professional development,
+                        ensuring that my skills remain sharp and relevant in our rapidly evolving technology landscape.
+                    </p>
+                </div>
+            </article>
+        </div>
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-white border-t border-gray-200 py-8">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center">
-                <p class="text-gray-600 text-sm">
-                    © 2025 Luiz Fernando Costa dos Santos. All rights reserved.
-                </p>
-                <div class="flex justify-center space-x-6 mt-4">
-                    <a href="../index.html" class="text-gray-500 hover:text-gray-700 text-sm transition">Home</a>
-                    <a href="projects.html" class="text-gray-500 hover:text-gray-700 text-sm transition">Projects</a>
-                    <a href="experience.html" class="text-gray-500 hover:text-gray-700 text-sm transition">Experience</a>
-                    <a href="index.html#contact" class="text-gray-500 hover:text-gray-700 text-sm transition">Contact</a>
+    <footer class="bg-white border-t border-slate-200 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <span class="font-serif font-bold text-xl text-slate-900">Luiz Fernando</span>
+                    <p class="text-slate-500 text-sm mt-2">
+                        © 2025 Luiz Fernando Costa dos Santos. All rights reserved.
+                    </p>
+                </div>
+
+                <div class="flex space-x-8">
+                    <a href="../index.html"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Home</a>
+                    <a href="projects.html"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Projects</a>
+                    <a href="experience.html"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Experience</a>
+                    <a href="../index.html#contact"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Contact</a>
                 </div>
             </div>
         </div>
     </footer>
+
 </body>
+
+</html>
