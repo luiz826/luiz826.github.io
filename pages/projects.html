@@ -3,18 +3,24 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Projects - Luiz Fernando</title>
+    <title>Projects | Luiz Fernando</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Tailwind CSS (official CDN script) -->
+    <meta name="description"
+        content="Showcase of technical projects by Luiz Fernando, covering Machine Learning, Data Engineering, and Full-Stack Development.">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts - Charter and Inter for Medium-like typography -->
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+
     <!-- Custom styles -->
     <link rel="stylesheet" href="../assets/css/styles.css">
+
     <script>
         tailwind.config = {
             theme: {
@@ -22,6 +28,10 @@
                     fontFamily: {
                         'serif': ['Charter', 'Georgia', 'serif'],
                         'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#6366f1',
                     }
                 }
             }
@@ -29,759 +39,673 @@
     </script>
 </head>
 
-<body class="bg-white text-gray-900 min-h-screen flex flex-col font-sans leading-relaxed">
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-100 selection:text-indigo-900">
 
     <!-- NAVIGATION -->
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-200">
-        <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
-            <!-- Logo / Name -->
-            <div class="font-serif font-bold text-2xl text-gray-900">
-                <a href="../index.html">Luiz Fernando</a>
-            </div>
-            <!-- Nav Links -->
-            <nav>
-                <ul class="flex items-center space-x-8 text-sm font-medium">
-                    <li><a href="../index.html" class="text-gray-700 hover:text-gray-900 transition">Home</a></li>
-                    <li><a href="experience.html" class="text-gray-700 hover:text-gray-900 transition">Experience</a>
-                    </li>
-                    <li><a href="projects.html" class="text-gray-900 border-b-2 border-gray-900">Projects</a></li>
+    <header
+        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="../index.html"
+                class="font-serif font-bold text-2xl text-slate-900 tracking-tight hover:text-indigo-600 transition-colors">
+                Luiz Fernando
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:block">
+                <ul class="flex items-center space-x-8 text-sm font-medium text-slate-600">
+                    <li><a href="../index.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Home</a></li>
+                    <li><a href="projects.html" class="text-indigo-600 font-semibold">Projects</a></li>
+                    <li><a href="experience.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Experience</a></li>
                     <li><a href="extracurricular.html"
-                            class="text-gray-700 hover:text-gray-900 transition">Extracurricular</a></li>
-                    <li><a href="curriculum.html" class="text-gray-700 hover:text-gray-900 transition">Curriculum</a>
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Extracurricular</a>
                     </li>
-                    <li><a href="education.html" class="text-gray-700 hover:text-gray-900 transition">Education</a></li>
+                    <li><a href="curriculum.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Curriculum</a></li>
+                    <li><a href="education.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Education</a></li>
                     <li><a href="certifications.html"
-                            class="text-gray-700 hover:text-gray-900 transition">Certifications</a></li>
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Certifications</a></li>
                 </ul>
             </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-slate-600 hover:text-slate-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </div>
     </header>
 
-    <!-- PROJECTS SECTION -->
     <main class="flex-grow page-container">
-        <div class="section-header">
+        <div class="section-header animate-fade-in">
             <h1 class="section-title">Projects</h1>
             <p class="section-description">
                 A showcase of my technical projects and contributions across different domains.
             </p>
         </div>
 
-        <div class="space-y-16">
+        <div class="space-y-16 animate-fade-in delay-200">
+
+            <!-- PROJECT: Rubber Duck Detection -->
             <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-8 items-start">
-                    <div class="w-full">
-                        <div
-                            class="bg-gradient-to-br to-green-100 rounded-xl border border-green-200 overflow-hidden shadow-sm flex items-center justify-center">
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
+                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
                             <img src="../assets/images/projects/rubber-duck-gif-2.gif"
-                                alt="Rubber Duck Detection Project Demo" class="w-full h-full object-cover" />
+                                alt="Rubber Duck Detection Project Demo"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
                         </div>
                     </div>
 
-                    <!-- Content Section -->
                     <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4">
-                            <h3 class="font-serif text-3xl font-bold text-gray-900">
+                        <div class="flex items-center gap-3 mb-4 flex-wrap">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900">
                                 <a href="https://rubber-duck-sigma.vercel.app/" target="_blank"
-                                    rel="noopener noreferrer" class="hover:underline">Rubber Duck Detection</a>
+                                    rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
+                                    Rubber Duck Detection
+                                </a>
                             </h3>
                             <span
-                                class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">Computer
+                                class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold uppercase tracking-wide rounded-full">Computer
                                 Vision</span>
                         </div>
 
-                        <div class="prose prose-gray max-w-none">
-                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
-                                🎯 <strong>Intelligent rubber duck detection</strong> system powered by YOLO deep
-                                learning architecture.
+                        <div class="prose prose-slate max-w-none mb-6">
+                            <p class="text-slate-600 leading-relaxed">
+                                Intelligent rubber duck detection system powered by YOLO deep learning architecture.
                                 Specifically designed for identifying rubber ducks in various environments with high
                                 accuracy and real-time processing capabilities.
                             </p>
+                        </div>
 
-                            <div class="space-y-4 mb-6">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🚀 Technical Highlights:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-2">
-                                        <li>• YOLO-based object detection for precise rubber duck localization</li>
-                                        <li>• Character recognition optimized for various environments</li>
-                                        <li>• Robust to various lighting and weather conditions</li>
-                                    </ul>
-                                </div>
-
-                                <div class="bg-green-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Python</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">YOLO</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">OpenCV</span>
-                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Deep
-                                            Learning</span>
-                                    </div>
-                                </div>
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
+                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                                    <li>YOLO-based object detection for precise localization</li>
+                                    <li>Robust to various lighting and weather conditions</li>
+                                </ul>
                             </div>
 
-                            <div class="flex items-center gap-4">
-                                <a href="https://github.com/luiz826/rubber-duck"
-                                    class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
-                                    <span class="mr-2">📖</span> View on GitHub
-                                </a>
-                                <span class="text-gray-500 text-sm">Computer Vision Project</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">YOLO</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">OpenCV</span>
                             </div>
                         </div>
+
+                        <a href="https://github.com/luiz826/rubber-duck" target="_blank"
+                            class="btn-primary inline-flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
                     </div>
                 </div>
             </article>
 
             <!-- PROJECT: Realtime Anomaly Engine -->
             <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-8 items-start">
-                    <!-- Large Image/Visual Section -->
-                    <div class="w-full">
-                        <div
-                            class="aspect-[4/3] bg-gradient-to-br from-indigo-50 to-indigo-100 rounded-xl border border-indigo-200 overflow-hidden shadow-sm flex items-center justify-center">
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
+                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
                             <img src="../assets/images/projects/demo-e-comerce.gif" alt="Real-Time Anomaly Engine Demo"
-                                class="w-full h-full object-cover" />
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
                         </div>
                     </div>
 
-                    <!-- Content Section -->
                     <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4">
-                            <h3 class="font-serif text-3xl font-bold text-gray-900">Real-Time Anomaly Detection Engine
-                            </h3>
+                        <div class="flex items-center gap-3 mb-4 flex-wrap">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900">Real-Time Anomaly Engine</h3>
                             <span
-                                class="px-3 py-1 bg-indigo-50 text-indigo-700 text-sm font-medium rounded-full">Streaming
+                                class="px-3 py-1 bg-indigo-100 text-indigo-700 text-xs font-semibold uppercase tracking-wide rounded-full">Streaming
                                 & Observability</span>
                         </div>
 
-                        <div class="prose prose-gray max-w-none">
-                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
-                                ⚡ <strong>Production-ready real-time anomaly detection</strong> engine for e-commerce
-                                logs. It combines high-throughput Kafka ingestion, Spark structured streaming, and
-                                TimescaleDB for metrics storage, plus LLM-powered insights via LangChain and Ollama.
+                        <div class="prose prose-slate max-w-none mb-6">
+                            <p class="text-slate-600 leading-relaxed">
+                                Production-ready real-time anomaly detection engine for e-commerce logs. It combines
+                                high-throughput Kafka ingestion, Spark structured streaming, and TimescaleDB for metrics
+                                storage, plus LLM-powered insights.
                             </p>
+                        </div>
 
-                            <div class="space-y-4 mb-6">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🚀 Technical Highlights:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-2">
-                                        <li>• End-to-end streaming pipeline with Kafka and Spark Structured Streaming
-                                        </li>
-                                        <li>• Time-series metrics stored in TimescaleDB and served by dashboards</li>
-                                        <li>• RAG pipeline + embeddings for LLM-guided root cause insights (LangChain +
-                                            Ollama)</li>
-                                        <li>• Automatic anomaly detection with alerting and explainability</li>
-                                    </ul>
-                                </div>
-
-                                <div class="bg-indigo-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Python</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Spark</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Kafka</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">TimescaleDB</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">LangChain</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Ollama</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Streamlit</span>
-                                    </div>
-                                </div>
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
+                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                                    <li>End-to-end streaming pipeline with Kafka and Spark</li>
+                                    <li>RAG pipeline + embeddings for LLM-guided root cause insights</li>
+                                    <li>Automatic anomaly detection with alerting</li>
+                                </ul>
                             </div>
 
-                            <div class="flex items-center gap-4">
-                                <a href="https://github.com/luiz826/realtime-anomaly-engine"
-                                    class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
-                                    <span class="mr-2">📖</span> View on GitHub
-                                </a>
-                                <span class="text-gray-500 text-sm">Real-time Data & MLOps Project</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Spark</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Kafka</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">LangChain</span>
                             </div>
                         </div>
+
+                        <a href="https://github.com/luiz826/realtime-anomaly-engine" target="_blank"
+                            class="btn-primary inline-flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
                     </div>
                 </div>
             </article>
 
+            <!-- PROJECT: Soletras -->
             <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-8 items-start">
-                    <div class="w-full">
-                        <div
-                            class="bg-gradient-to-br to-green-100 rounded-xl border border-green-200 overflow-hidden shadow-sm flex items-center justify-center">
-                            <img src="../assets/images/projects/soletras.png" alt="Soletras"
-                                class="w-full h-full object-cover" />
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
+                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
+                            <img src="../assets/images/projects/soletras.png" alt="Soletras Project Demo"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
                         </div>
                     </div>
 
-                    <!-- Content Section -->
                     <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4">
-                            <h3 class="font-serif text-3xl font-bold text-gray-900">
+                        <div class="flex items-center gap-3 mb-4 flex-wrap">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900">
                                 <a href="https://soletras.vercel.app/" target="_blank" rel="noopener noreferrer"
-                                    class="hover:underline">Soletras</a>
+                                    class="hover:text-indigo-600 transition-colors">Soletras</a>
                             </h3>
                             <span
-                                class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">Full-Stack
-                                NLP Application</span>
+                                class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold uppercase tracking-wide rounded-full">Full-Stack
+                                NLP</span>
                         </div>
 
-                        <div class="prose prose-gray max-w-none">
-                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
-                                🎯 <strong>Brazilian word searcher</strong> system that helps people
-                                complete the Brazilian SpellingBee (called <a href="https://g1.globo.com/jogos/soletra/"
-                                    target="_blank" rel="noopener noreferrer"
-                                    class="text-blue-600 hover:underline">Soletra</a>) with advanced filtering and
-                                search
-                                capabilities.
+                        <div class="prose prose-slate max-w-none mb-6">
+                            <p class="text-slate-600 leading-relaxed">
+                                Brazilian word searcher system that helps people complete the Brazilian SpellingBee.
+                                Features advanced filtering and search capabilities powered by SpaCy NLP.
                             </p>
+                        </div>
 
-                            <div class="space-y-4 mb-6">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🚀 Technical Highlights:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-2">
-                                        <li>• SpaCy NLP to filter conjugated verbs and plurals</li>
-                                        <li>• 550,633+ Brazilian Portuguese words from 3 sources</li>
-                                        <li>• Pre-processed word lists for instant startup (&lt;1s)</li>
-                                        <li>• Advanced search filters (letters, length, patterns)</li>
-                                        <li>• Modern React 18 + Vite frontend with dark mode</li>
-                                        <li>• Production-ready with GitHub Actions auto-deploy</li>
-                                    </ul>
-                                </div>
-
-                                <div class="bg-green-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Python</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Flask</span>
-                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">SpaCy
-                                            NLP</span>
-                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">React
-                                            18</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Vite</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Gunicorn</span>
-                                    </div>
-                                </div>
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
+                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                                    <li>SpaCy NLP to filter conjugated verbs and plurals</li>
+                                    <li>550,633+ Brazilian Portuguese words</li>
+                                    <li>Modern React 18 + Vite frontend</li>
+                                </ul>
                             </div>
 
-                            <div class="flex items-center gap-4">
-                                <a href="https://github.com/luiz826/soletras"
-                                    class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
-                                    <span class="mr-2">📖</span> View on GitHub
-                                </a>
-                                <span class="text-gray-500 text-sm">Full-Stack NLP Application</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Flask</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">React</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">SpaCy</span>
                             </div>
                         </div>
+
+                        <a href="https://github.com/luiz826/soletras" target="_blank"
+                            class="btn-primary inline-flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
                     </div>
                 </div>
             </article>
 
-
-            <!-- PROJECT 1: PUMLE -->
+            <!-- PROJECT: PUMLE -->
             <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-8 items-start">
-                    <!-- Large Image/Visual Section -->
-                    <div class="w-full">
-                        <div
-                            class="aspect-[4/3] bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl border border-blue-200 overflow-hidden shadow-sm">
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
+                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
                             <img src="../assets/images/projects/gif-pumle.gif" alt="PUMLE Project Demo"
-                                class="w-full h-full object-cover" />
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
                         </div>
                     </div>
 
-                    <!-- Content Section -->
                     <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4">
-                            <h3 class="font-serif text-3xl font-bold text-gray-900">PUMLE</h3>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm font-medium rounded-full">Data
+                        <div class="flex items-center gap-3 mb-4 flex-wrap">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900">PUMLE</h3>
+                            <span
+                                class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-wide rounded-full">Data
                                 Engineering</span>
                         </div>
 
-                        <div class="prose prose-gray max-w-none">
-                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
-                                🌍 <strong>Innovative data pipeline</strong> for geological carbon storage in Brazilian
-                                reservoirs.
-                                PUMLE transforms complex simulation outputs into streamlined multidimensional arrays,
-                                making
-                                environmental data accessible and actionable.
+                        <div class="prose prose-slate max-w-none mb-6">
+                            <p class="text-slate-600 leading-relaxed">
+                                Innovative data pipeline for geological carbon storage in Brazilian reservoirs.
+                                Transforms complex simulation outputs into streamlined multidimensional arrays.
                             </p>
+                        </div>
 
-                            <div class="space-y-4 mb-6">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">✨ Key Features:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-2">
-                                        <li>• Multi-format export (NumPy, Zarr, MAT-files, CSV)</li>
-                                        <li>• Cloud integration for seamless data sharing</li>
-                                        <li>• Optimized for large-scale geological simulations</li>
-                                        <li>• Built for environmental impact analysis</li>
-                                    </ul>
-                                </div>
-
-                                <div class="bg-blue-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Python</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">NumPy</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Zarr</span>
-                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Cloud
-                                            Storage</span>
-                                    </div>
-                                </div>
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
+                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                                    <li>Multi-format export (NumPy, Zarr, MAT-files, CSV)</li>
+                                    <li>Optimized for large-scale geological simulations</li>
+                                </ul>
                             </div>
 
-                            <div class="flex items-center gap-4">
-                                <a href="https://github.com/luiz826/PUMLE"
-                                    class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
-                                    <span class="mr-2">📖</span> View on GitHub
-                                </a>
-                                <span class="text-gray-500 text-sm">Open Source Project</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">NumPy</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Zarr</span>
                             </div>
                         </div>
+
+                        <a href="https://github.com/luiz826/PUMLE" target="_blank"
+                            class="btn-primary inline-flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
                     </div>
                 </div>
             </article>
 
-            <!-- PROJECT 2: Car Plate Detection -->
+            <!-- PROJECT: Car Plate Detection -->
             <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-8 items-start">
-                    <!-- Large Image/Visual Section -->
-                    <div class="w-full">
-                        <div
-                            class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl border border-green-200 overflow-hidden shadow-sm flex items-center justify-center">
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
+                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
                             <img src="../assets/images/projects/car-plate_gif.gif"
-                                alt="Car Plate Detection Project Demo" class="w-full h-full object-cover" />
+                                alt="Car Plate Detection Project Demo"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
                         </div>
                     </div>
 
-                    <!-- Content Section -->
                     <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4">
-                            <h3 class="font-serif text-3xl font-bold text-gray-900">Car Plate Detection</h3>
+                        <div class="flex items-center gap-3 mb-4 flex-wrap">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900">Car Plate Detection</h3>
                             <span
-                                class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">Computer
+                                class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold uppercase tracking-wide rounded-full">Computer
                                 Vision</span>
                         </div>
 
-                        <div class="prose prose-gray max-w-none">
-                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
-                                🎯 <strong>Intelligent license plate recognition</strong> system powered by YOLO deep
-                                learning architecture.
-                                Specifically designed for Brazilian vehicle registration patterns with high accuracy and
-                                real-time processing capabilities.
+                        <div class="prose prose-slate max-w-none mb-6">
+                            <p class="text-slate-600 leading-relaxed">
+                                Intelligent license plate recognition system powered by YOLO deep learning architecture.
+                                Designed for Brazilian vehicle registration patterns with high accuracy.
                             </p>
+                        </div>
 
-                            <div class="space-y-4 mb-6">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🚀 Technical Highlights:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-2">
-                                        <li>• YOLO-based object detection for precise plate localization</li>
-                                        <li>• Character recognition optimized for Brazilian formats</li>
-                                        <li>• Real-time processing with high accuracy rates</li>
-                                        <li>• Robust to various lighting and weather conditions</li>
-                                    </ul>
-                                </div>
-
-                                <div class="bg-green-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Python</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">YOLO</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">OpenCV</span>
-                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Deep
-                                            Learning</span>
-                                    </div>
-                                </div>
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
+                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                                    <li>YOLO-based object detection for precise plate localization</li>
+                                    <li>Character recognition optimized for Brazilian formats</li>
+                                </ul>
                             </div>
 
-                            <div class="flex items-center gap-4">
-                                <a href="https://github.com/luiz826/plate-detection"
-                                    class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
-                                    <span class="mr-2">📖</span> View on GitHub
-                                </a>
-                                <span class="text-gray-500 text-sm">Computer Vision Project</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">YOLO</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">OpenCV</span>
                             </div>
                         </div>
+
+                        <a href="https://github.com/luiz826/plate-detection" target="_blank"
+                            class="btn-primary inline-flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
                     </div>
                 </div>
             </article>
 
+            <!-- PROJECT: Michael Scott Generator -->
             <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-8 items-start">
-                    <!-- Large Image/Visual Section -->
-                    <div class="w-full">
-                        <div
-                            class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl border border-green-200 overflow-hidden shadow-sm flex items-center justify-center">
-                            <img src="../assets/images/projects/office-sentence.gif" alt="Office Sentence Project Demo"
-                                class="w-full h-full object-cover" />
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
+                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
+                            <img src="../assets/images/projects/office-sentence.gif"
+                                alt="Michael Scott Generator Project Demo"
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
                         </div>
                     </div>
 
-                    <!-- Content Section -->
                     <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4">
-                            <h3 class="font-serif text-3xl font-bold text-gray-900">Michael Scott Speak Generator with
-                                GPT-2</h3>
-                            <span class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">Natural
-                                Language Processing</span>
+                        <div class="flex items-center gap-3 mb-4 flex-wrap">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900">Michael Scott Speak Generator</h3>
+                            <span
+                                class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold uppercase tracking-wide rounded-full">NLP</span>
                         </div>
 
-                        <div class="prose prose-gray max-w-none">
-                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
-                                🎯 <strong>Michael Scott Speak Generator </strong> system powered by GPT-2 transformers
-                                architecture.
-                                This project generates text in the style of Michael Scott from "The Office". It
-                                leverages advanced natural language processing techniques to create humorous and
-                                contextually relevant sentences, capturing the essence of the character's unique speech
-                                patterns.
-                                It's important to note that this project was built before the LLM's boom and does not
-                                utilize cutting-edge models like GPT-4 or Claude 3.
+                        <div class="prose prose-slate max-w-none mb-6">
+                            <p class="text-slate-600 leading-relaxed">
+                                Text generation system powered by GPT-2 transformers architecture. Generates text in the
+                                style of Michael Scott from "The Office", leveraging advanced NLP techniques.
                             </p>
+                        </div>
 
-                            <div class="space-y-4 mb-6">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🚀 Technical Highlights:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-2">
-                                        <li>• Text generation tailored to Michael Scott's unique speech patterns</li>
-                                        <li>• Contextual understanding of "The Office" episodes</li>
-                                        <li>• NLP techniques for humor generation</li>
-                                        <li>• Fine-tuning on character-specific dialogue</li>
-                                    </ul>
-                                </div>
-
-                                <div class="bg-green-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Python</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Transformers</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">PyTorch</span>
-                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Deep
-                                            Learning</span>
-                                    </div>
-                                </div>
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
+                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                                    <li>Fine-tuning on character-specific dialogue</li>
+                                    <li>Contextual understanding of "The Office" episodes</li>
+                                </ul>
                             </div>
 
-                            <div class="flex items-center gap-4">
-                                <a href="https://huggingface.co/luiz826/MichaelScottGenFinal"
-                                    class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
-                                    <span class="mr-2">📖</span> View on Hugging Face
-                                </a>
-                                <span class="text-gray-500 text-sm">Natural Language Processing Project</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Transformers</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">PyTorch</span>
                             </div>
                         </div>
+
+                        <a href="https://huggingface.co/luiz826/MichaelScottGenFinal" target="_blank"
+                            class="btn-primary inline-flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                            </svg>
+                            View on Hugging Face
+                        </a>
                     </div>
                 </div>
             </article>
 
+            <!-- PROJECT: Motion Coach -->
             <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-8 items-start">
-                    <!-- Large Image/Visual Section -->
-                    <div class="w-full">
-                        <div
-                            class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl border border-green-200 overflow-hidden shadow-sm flex items-center justify-center">
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
+                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
                             <img src="../assets/images/projects/motion-coach.png" alt="Motion Coach Project Demo"
-                                class="w-full h-full object-cover" />
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
                         </div>
                     </div>
 
-                    <!-- Content Section -->
                     <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4">
-                            <h3 class="font-serif text-3xl font-bold text-gray-900">Motion Coach: Gym Assistant</h3>
+                        <div class="flex items-center gap-3 mb-4 flex-wrap">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900">Motion Coach: Gym Assistant</h3>
                             <span
-                                class="px-3 py-1 bg-green-100 text-green-700 text-sm font-medium rounded-full">Computer
+                                class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold uppercase tracking-wide rounded-full">Computer
                                 Vision</span>
                         </div>
 
-                        <div class="prose prose-gray max-w-none">
-                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
-                                🎯 <strong>Motion Coach</strong> is an innovative gym assistant application that
-                                leverages computer vision to provide real-time feedback on exercise form and technique.
-                                The model had a f1-score of 0.92 on the validation set, demonstrating its effectiveness
-                                in detecting and analyzing human poses during workouts.
+                        <div class="prose prose-slate max-w-none mb-6">
+                            <p class="text-slate-600 leading-relaxed">
+                                Innovative gym assistant application that leverages computer vision to provide real-time
+                                feedback on exercise form and technique. Achieved F1-score of 0.92.
                             </p>
+                        </div>
 
-                            <div class="space-y-4 mb-6">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🚀 Technical Highlights:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-2">
-                                        <li>• Real-time pose detection and tracking</li>
-                                        <li>• Form analysis using keypoint detection</li>
-                                        <li>• Feedback system for exercise correction</li>
-                                        <li>• User-friendly interface for workout guidance</li>
-                                    </ul>
-                                </div>
-
-                                <div class="bg-green-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Python</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">FastAPI</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">PyTorch</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">MediaPipe</span>
-                                    </div>
-                                </div>
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
+                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                                    <li>Real-time pose detection and tracking</li>
+                                    <li>Form analysis using keypoint detection</li>
+                                </ul>
                             </div>
 
-                            <div class="flex items-center gap-4">
-                                <a href="https://github.com/caiochacon/deep_pdi/tree/clean-branch"
-                                    class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
-                                    <span class="mr-2">📖</span> View on GitHub
-                                </a>
-                                <span class="text-gray-500 text-sm">Computer Vision Project</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">FastAPI</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">MediaPipe</span>
                             </div>
                         </div>
+
+                        <a href="https://github.com/caiochacon/deep_pdi/tree/clean-branch" target="_blank"
+                            class="btn-primary inline-flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.48 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
                     </div>
                 </div>
             </article>
 
-            <!-- PROJECT 3: Bin Packing -->
+            <!-- PROJECT: Bin Packing -->
             <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-8 items-start">
-                    <!-- Large Image/Visual Section -->
-                    <div class="w-full">
-                        <div
-                            class="aspect-[4/3] bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl border border-purple-200 overflow-hidden shadow-sm flex items-center justify-center">
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
+                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
                             <img src="../assets/images/projects/bin-packing.jpg" alt="Bin Packing Project Demo"
-                                class="w-full h-full object-cover" />
+                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
                         </div>
                     </div>
 
-                    <!-- Content Section -->
                     <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4">
-                            <h3 class="font-serif text-3xl font-bold text-gray-900">Bin Packing Optimizer</h3>
+                        <div class="flex items-center gap-3 mb-4 flex-wrap">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900">Bin Packing Optimizer</h3>
                             <span
-                                class="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-medium rounded-full">Algorithms</span>
+                                class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold uppercase tracking-wide rounded-full">Algorithms</span>
                         </div>
 
-                        <div class="prose prose-gray max-w-none">
-                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
-                                ⚡ <strong>High-performance solution</strong> to the Variable-Sized Bin Packing Problem
-                                (VSBPP).
-                                Built from scratch in C++ to achieve optimal space utilization with minimal
-                                computational overhead,
-                                perfect for logistics and resource allocation challenges.
+                        <div class="prose prose-slate max-w-none mb-6">
+                            <p class="text-slate-600 leading-relaxed">
+                                High-performance solution to the Variable-Sized Bin Packing Problem (VSBPP). Built from
+                                scratch in C++ to achieve optimal space utilization with minimal computational overhead.
                             </p>
+                        </div>
 
-                            <div class="space-y-4 mb-6">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">💡 Algorithm Features:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-2">
-                                        <li>• Optimized C++ implementation for maximum speed</li>
-                                        <li>• Variable-sized container support</li>
-                                        <li>• Multiple heuristic strategies</li>
-                                        <li>• Scalable for large dataset processing</li>
-                                    </ul>
-                                </div>
-
-                                <div class="bg-purple-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">C++</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Algorithms</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Optimization</span>
-                                        <span class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Data
-                                            Structures</span>
-                                    </div>
-                                </div>
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
+                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                                    <li>Optimized C++ implementation for maximum speed</li>
+                                    <li>Variable-sized container support</li>
+                                </ul>
                             </div>
 
-                            <div class="flex items-center gap-4">
-                                <a href="https://github.com/luiz826/bin-packing"
-                                    class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
-                                    <span class="mr-2">📖</span> View on GitHub
-                                </a>
-                                <span class="text-gray-500 text-sm">Algorithm Implementation</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">C++</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Algorithms</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Optimization</span>
                             </div>
                         </div>
+
+                        <a href="https://github.com/luiz826/bin-packing" target="_blank"
+                            class="btn-primary inline-flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
                     </div>
                 </div>
             </article>
 
-            <!-- PROJECT 4: Branch and Bound -->
+            <!-- PROJECT: Branch and Bound -->
             <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-8 items-start">
-                    <!-- Large Image/Visual Section -->
-                    <div class="w-full">
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
                         <div
-                            class="aspect-[4/3] bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl border border-orange-200 overflow-hidden shadow-sm flex items-center justify-center">
-                            <div class="text-center p-8">
-                                <img src="../assets/images/projects/bb.png" alt="Branch and Bound Project Demo"
-                                    class="w-full h-full object-cover" />
-                            </div>
+                            class="aspect-video bg-slate-100 relative overflow-hidden flex items-center justify-center">
+                            <img src="../assets/images/projects/bb.png" alt="Branch and Bound Project Demo"
+                                class="w-full h-full object-contain p-8 transform group-hover:scale-105 transition-transform duration-500" />
                         </div>
                     </div>
 
-                    <!-- Content Section -->
                     <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4">
-                            <h3 class="font-serif text-3xl font-bold text-gray-900">Branch and Bound</h3>
+                        <div class="flex items-center gap-3 mb-4 flex-wrap">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900">Branch and Bound</h3>
                             <span
-                                class="px-3 py-1 bg-orange-100 text-orange-700 text-sm font-medium rounded-full">Optimization</span>
+                                class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-semibold uppercase tracking-wide rounded-full">Optimization</span>
                         </div>
 
-                        <div class="prose prose-gray max-w-none">
-                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
-                                🧮 <strong>Mathematical optimization powerhouse</strong> implementing the classic Branch
-                                and Bound algorithm.
-                                Designed to solve complex integer linear programming problems with guaranteed optimal
-                                solutions,
-                                leveraging Python's MIP library for robust performance.
+                        <div class="prose prose-slate max-w-none mb-6">
+                            <p class="text-slate-600 leading-relaxed">
+                                Mathematical optimization powerhouse implementing the classic Branch and Bound
+                                algorithm. Designed to solve complex integer linear programming problems with guaranteed
+                                optimal solutions.
                             </p>
+                        </div>
 
-                            <div class="space-y-4 mb-6">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🔬 Mathematical Excellence:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-2">
-                                        <li>• Classic Branch and Bound implementation</li>
-                                        <li>• Integer linear programming solver</li>
-                                        <li>• Optimal solution guarantees</li>
-                                        <li>• Educational and practical applications</li>
-                                    </ul>
-                                </div>
-
-                                <div class="bg-orange-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Python</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">MIP</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Linear
-                                            Programming</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Mathematics</span>
-                                    </div>
-                                </div>
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
+                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                                    <li>Classic Branch and Bound implementation</li>
+                                    <li>Integer linear programming solver</li>
+                                </ul>
                             </div>
 
-                            <div class="flex items-center gap-4">
-                                <a href="https://github.com/luiz826/branch_and_bound"
-                                    class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
-                                    <span class="mr-2">📖</span> View on GitHub
-                                </a>
-                                <span class="text-gray-500 text-sm">Mathematical Algorithm</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">MIP</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Math</span>
                             </div>
                         </div>
+
+                        <a href="https://github.com/luiz826/branch_and_bound" target="_blank"
+                            class="btn-primary inline-flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
                     </div>
                 </div>
             </article>
 
-            <!-- PROJECT 5: NumPy from Scratch -->
+            <!-- PROJECT: NumPy from Scratch -->
             <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-8 items-start">
-                    <!-- Large Image/Visual Section -->
-                    <div class="w-full">
+                <div class="grid lg:grid-cols-2 gap-10 items-start">
+                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
                         <div
-                            class="aspect-[4/3] bg-gradient-to-br from-red-50 to-red-100 rounded-xl border border-red-200 overflow-hidden shadow-sm flex items-center justify-center">
-                            <div class="text-center p-8">
-                                <img src="../assets/images/projects/numpy.svg" alt="NumPy from Scratch Project Demo"
-                                    class="w-full h-full object-cover" />
-                            </div>
+                            class="aspect-video bg-slate-100 relative overflow-hidden flex items-center justify-center">
+                            <img src="../assets/images/projects/numpy.svg" alt="NumPy from Scratch Project Demo"
+                                class="w-full h-full object-contain p-8 transform group-hover:scale-105 transition-transform duration-500" />
                         </div>
                     </div>
 
-                    <!-- Content Section -->
                     <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4">
-                            <h3 class="font-serif text-3xl font-bold text-gray-900">NumPy from Scratch</h3>
+                        <div class="flex items-center gap-3 mb-4 flex-wrap">
+                            <h3 class="font-serif text-2xl font-bold text-slate-900">NumPy from Scratch</h3>
                             <span
-                                class="px-3 py-1 bg-red-100 text-red-700 text-sm font-medium rounded-full">Low-Level</span>
+                                class="px-3 py-1 bg-red-100 text-red-700 text-xs font-semibold uppercase tracking-wide rounded-full">Low-Level</span>
                         </div>
 
-                        <div class="prose prose-gray max-w-none">
-                            <p class="text-gray-700 leading-relaxed mb-6 text-lg">
-                                🛠️ <strong>Ground-up recreation</strong> of NumPy's core functionality using pure C
-                                programming.
-                                This project demonstrates deep understanding of memory management, array operations, and
-                                performance optimization in scientific computing libraries.
+                        <div class="prose prose-slate max-w-none mb-6">
+                            <p class="text-slate-600 leading-relaxed">
+                                Ground-up recreation of NumPy's core functionality using pure C programming.
+                                Demonstrates deep understanding of memory management, array operations, and performance
+                                optimization.
                             </p>
+                        </div>
 
-                            <div class="space-y-4 mb-6">
-                                <div class="bg-gray-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">⚙️ Engineering Excellence:</h4>
-                                    <ul class="text-sm text-gray-700 space-y-2">
-                                        <li>• Pure C implementation for maximum control</li>
-                                        <li>• High-dimensional array manipulation</li>
-                                        <li>• Memory-efficient data structures</li>
-                                        <li>• Core mathematical operations</li>
-                                    </ul>
-                                </div>
-
-                                <div class="bg-red-50 p-4 rounded-lg">
-                                    <h4 class="font-medium text-gray-900 mb-3">🛠️ Technical Stack:</h4>
-                                    <div class="flex flex-wrap gap-2">
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">C</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Memory
-                                            Management</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Arrays</span>
-                                        <span
-                                            class="px-2 py-1 bg-white text-gray-700 rounded text-xs font-medium">Performance</span>
-                                    </div>
-                                </div>
+                        <div class="space-y-4 mb-8">
+                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
+                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
+                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
+                                    <li>Pure C implementation for maximum control</li>
+                                    <li>High-dimensional array manipulation</li>
+                                </ul>
                             </div>
 
-                            <div class="flex items-center gap-4">
-                                <a href="https://github.com/luiz826/Programacao_Estruturada/tree/main/projeto_final"
-                                    class="inline-flex items-center px-6 py-3 bg-gray-900 text-white hover:bg-gray-800 font-medium rounded-lg transition duration-200">
-                                    <span class="mr-2">📖</span> View on GitHub
-                                </a>
-                                <span class="text-gray-500 text-sm">System Programming Project</span>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">C</span>
+                                <span
+                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Memory
+                                    Management</span>
                             </div>
                         </div>
+
+                        <a href="https://github.com/luiz826/Programacao_Estruturada/tree/main/projeto_final"
+                            target="_blank" class="btn-primary inline-flex items-center gap-2">
+                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                                <path fill-rule="evenodd"
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                            View on GitHub
+                        </a>
                     </div>
                 </div>
             </article>
+
         </div>
     </main>
 
     <!-- FOOTER -->
-    <footer class="bg-white border-t border-gray-200 py-8">
-        <div class="max-w-4xl mx-auto px-6">
-            <div class="text-center">
-                <p class="text-gray-600 text-sm">
-                    © 2025 Luiz Fernando Costa dos Santos. All rights reserved.
-                </p>
-                <div class="flex justify-center space-x-6 mt-4">
-                    <a href="../index.html" class="text-gray-500 hover:text-gray-700 text-sm transition">Home</a>
-                    <a href="projects.html" class="text-gray-500 hover:text-gray-700 text-sm transition">Projects</a>
+    <footer class="bg-white border-t border-slate-200 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <span class="font-serif font-bold text-xl text-slate-900">Luiz Fernando</span>
+                    <p class="text-slate-500 text-sm mt-2">
+                        © 2025 Luiz Fernando Costa dos Santos. All rights reserved.
+                    </p>
+                </div>
+
+                <div class="flex space-x-8">
+                    <a href="../index.html"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Home</a>
+                    <a href="projects.html"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Projects</a>
                     <a href="experience.html"
-                        class="text-gray-500 hover:text-gray-700 text-sm transition">Experience</a>
-                    <a href="index.html#contact"
-                        class="text-gray-500 hover:text-gray-700 text-sm transition">Contact</a>
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Experience</a>
+                    <a href="../index.html#contact"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Contact</a>
                 </div>
             </div>
         </div>
     </footer>
+
 </body>
 
 </html>
