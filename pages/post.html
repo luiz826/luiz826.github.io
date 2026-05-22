@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Post | Luiz Fernando</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked@12.0.0/marked.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'serif': ['Charter', 'Georgia', 'serif'],
+                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#0f172a',
+                        accent: '#6366f1',
+                    },
+                    typography: {
+                        DEFAULT: {
+                            css: {
+                                maxWidth: 'none',
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Article prose styles */
+        #post-body h1, #post-body h2, #post-body h3, #post-body h4 {
+            font-family: 'Charter', Georgia, serif;
+            color: #0f172a;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+        #post-body h1 { font-size: 2rem; }
+        #post-body h2 { font-size: 1.5rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; }
+        #post-body h3 { font-size: 1.25rem; }
+        #post-body p {
+            color: #334155;
+            line-height: 1.85;
+            margin-bottom: 1.25rem;
+            font-size: 1.0625rem;
+        }
+        #post-body a { color: #6366f1; text-decoration: underline; }
+        #post-body a:hover { color: #4f46e5; }
+        #post-body ul, #post-body ol {
+            padding-left: 1.5rem;
+            margin-bottom: 1.25rem;
+            color: #334155;
+            line-height: 1.85;
+        }
+        #post-body ul { list-style-type: disc; }
+        #post-body ol { list-style-type: decimal; }
+        #post-body li { margin-bottom: 0.375rem; }
+        #post-body blockquote {
+            border-left: 4px solid #6366f1;
+            padding: 0.5rem 1rem;
+            margin: 1.5rem 0;
+            background: #eef2ff;
+            border-radius: 0 0.5rem 0.5rem 0;
+            color: #3730a3;
+            font-style: italic;
+        }
+        #post-body code {
+            background: #f1f5f9;
+            border: 1px solid #e2e8f0;
+            border-radius: 0.25rem;
+            padding: 0.15rem 0.4rem;
+            font-size: 0.875em;
+            font-family: 'JetBrains Mono', 'Fira Code', monospace;
+            color: #0f172a;
+        }
+        #post-body pre {
+            background: #0f172a;
+            border-radius: 0.75rem;
+            padding: 1.25rem 1.5rem;
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+        }
+        #post-body pre code {
+            background: none;
+            border: none;
+            padding: 0;
+            color: #e2e8f0;
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+        #post-body hr {
+            border: none;
+            border-top: 1px solid #e2e8f0;
+            margin: 2rem 0;
+        }
+        #post-body img {
+            max-width: 100%;
+            border-radius: 0.75rem;
+            margin: 1.5rem 0;
+        }
+        #post-body strong { color: #0f172a; font-weight: 600; }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-100 selection:text-indigo-900">
+
+    <!-- NAVIGATION -->
+    <header
+        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="../index.html"
+                class="font-serif font-bold text-2xl text-slate-900 tracking-tight hover:text-indigo-600 transition-colors">
+                Luiz Fernando
+            </a>
+
+            <nav class="hidden md:block">
+                <ul class="flex items-center space-x-8 text-sm font-medium text-slate-600">
+                    <li><a href="../index.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Home</a></li>
+                    <li><a href="experience.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Experience</a></li>
+                    <li><a href="education.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Education</a></li>
+                    <li><a href="projects.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Projects</a></li>
+                    <li><a href="extracurricular.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Extracurricular</a></li>
+                    <li><a href="certifications.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Certifications</a></li>
+                    <li><a href="curriculum.html"
+                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Curriculum</a></li>
+                    <li><a href="blog.html" class="text-indigo-600 font-semibold">Blog</a></li>
+                </ul>
+            </nav>
+
+            <button class="md:hidden text-slate-600 hover:text-slate-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <div id="post-container" class="max-w-2xl mx-auto px-6 py-16">
+            <p class="text-slate-400 text-center">Loading...</p>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-slate-200 py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="text-center md:text-left">
+                    <span class="font-serif font-bold text-xl text-slate-900">Luiz Fernando</span>
+                    <p class="text-slate-500 text-sm mt-2">
+                        © 2025 Luiz Fernando Costa dos Santos. All rights reserved.
+                    </p>
+                </div>
+                <div class="flex space-x-8">
+                    <a href="../index.html"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Home</a>
+                    <a href="projects.html"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Projects</a>
+                    <a href="experience.html"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Experience</a>
+                    <a href="../index.html#contact"
+                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        async function loadPost() {
+            const container = document.getElementById('post-container');
+            const params = new URLSearchParams(window.location.search);
+            const slug = params.get('slug');
+
+            if (!slug) {
+                container.innerHTML = `<p class="text-center text-slate-400">No post specified.</p>`;
+                return;
+            }
+
+            try {
+                // Load metadata from index
+                const indexRes = await fetch('../posts/index.json');
+                const posts = await indexRes.json();
+                const meta = posts.find(p => p.slug === slug);
+
+                // Load markdown content
+                const mdRes = await fetch(`../posts/${slug}.md`);
+                if (!mdRes.ok) throw new Error('Post not found');
+                const markdown = await mdRes.text();
+
+                const date = meta ? new Date(meta.date).toLocaleDateString('en-US', {
+                    year: 'numeric', month: 'long', day: 'numeric'
+                }) : '';
+
+                const tags = meta ? (meta.tags || []).map(t =>
+                    `<span class="px-2.5 py-1 bg-slate-100 text-slate-600 text-xs rounded border border-slate-200">${t}</span>`
+                ).join('') : '';
+
+                // Update page title
+                if (meta) document.title = `${meta.title} | Luiz Fernando`;
+
+                container.innerHTML = `
+                    <a href="blog.html"
+                        class="inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-indigo-600 transition-colors mb-10">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                        Back to Blog
+                    </a>
+
+                    <header class="mb-10">
+                        <div class="flex items-center gap-3 mb-3">
+                            ${date ? `<p class="text-xs text-slate-400 font-medium uppercase tracking-wide">${date}</p>` : ''}
+                            ${meta && meta.lang ? `<span class="px-2 py-0.5 bg-indigo-50 text-indigo-600 text-xs font-medium rounded border border-indigo-100">${meta.lang}</span>` : ''}
+                        </div>
+                        ${meta ? `<h1 class="font-serif text-4xl font-bold text-slate-900 leading-tight mb-4">${meta.title}</h1>` : ''}
+                        ${tags ? `<div class="flex flex-wrap gap-2">${tags}</div>` : ''}
+                    </header>
+
+                    <hr class="border-slate-200 mb-10">
+
+                    <div id="post-body">${marked.parse(markdown)}</div>
+                `;
+
+            } catch (e) {
+                container.innerHTML = `
+                    <a href="blog.html" class="inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-indigo-600 mb-10">
+                        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                        Back to Blog
+                    </a>
+                    <p class="text-slate-400 text-center mt-20">Post not found.</p>`;
+            }
+        }
+
+        loadPost();
+    </script>
+
+</body>
+
+</html>

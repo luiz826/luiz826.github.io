@@ -1,0 +1,46 @@
+[
+    {
+        "slug": "o-vale-das-nossas-mentes",
+        "title": "o vale das nossas mentes",
+        "date": "2026-05-22",
+        "lang": "pt-BR",
+        "tags": [
+            "poem"
+        ],
+        "excerpt": "Poema sobre o tempo, o vale e o mangue."
+    },
+    {
+        "slug": "como-comecar-a-competir-no-kaggle",
+        "title": "Como começar a competir no Kaggle!",
+        "date": "2021-01-11",
+        "lang": "pt-BR",
+        "tags": [
+            "kaggle",
+            "data science"
+        ],
+        "excerpt": "História da minha primeira competição e algumas dicas para quem quer começar."
+    },
+    {
+        "slug": "minha-graduacao-em-ciencia-de-dados-ufpb",
+        "title": "Minha graduação em Ciência de Dados e Inteligência Artificial na UFPB",
+        "date": "2025-07-01",
+        "lang": "pt-BR",
+        "tags": [
+            "graduação",
+            "data science",
+            "ufpb"
+        ],
+        "excerpt": "O que você vai encontrar no curso de Ciência de Dados e IA da UFPB — disciplinas, projetos e o que realmente importa."
+    },
+    {
+        "slug": "my-adventure-in-texas",
+        "title": "My adventure in Texas (not exactly)",
+        "date": "2026-05-22",
+        "lang": "en-US",
+        "tags": [
+            "master",
+            "computer science"
+        ],
+        "excerpt": "How I ended up being accepted in a master's degree in UT Austin."
+    }
+]
