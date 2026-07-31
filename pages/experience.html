@@ -94,14 +94,14 @@
 
         <div class="space-y-8 max-w-4xl mx-auto animate-fade-in delay-200">
 
-            <!-- EXPERIENCE CARD 0: Cloudwalk -->
+            <!-- EXPERIENCE CARD 0: CloudWalk -->
             <article class="content-card relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-1 h-full bg-indigo-500"></div>
                 <div class="flex flex-col md:flex-row gap-6 items-start">
                     <div class="flex-shrink-0">
                         <div
                             class="w-16 h-16 rounded-xl bg-white border border-slate-200 p-2 shadow-sm flex items-center justify-center">
-                            <img src="../assets/images/companies/cw-logo-2.jpg" alt="Cloudwalk Logo"
+                            <img src="../assets/images/companies/cw-logo-2.jpg" alt="CloudWalk Logo"
                                 class="w-full h-full object-contain" />
                         </div>
                     </div>
@@ -109,8 +109,8 @@
                     <div class="flex-grow w-full">
                         <div class="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
                             <div>
-                                <h3 class="font-serif text-xl font-bold text-slate-900">Data Scientist III (MLOps)</h3>
-                                <div class="text-indigo-600 font-medium">Cloudwalk</div>
+                                <h3 class="font-serif text-xl font-bold text-slate-900">Data Scientist III</h3>
+                                <div class="text-indigo-600 font-medium">CloudWalk</div>
                             </div>
                             <span
                                 class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 whitespace-nowrap">
@@ -121,14 +121,19 @@
                         <div class="prose prose-slate max-w-none mt-4">
                             <p class="text-slate-600 leading-relaxed mb-3">
                                 CloudWalk is a Brazilian unicorn democratizing the payment market with state-of-the-art
-                                technology through InfinitePay. As part of the credit team, I am responsible for the
+                                technology through InfinitePay. As part of the credit team, I'm responsible for the
                                 creation, deployment, and maintenance of credit models, as well as monitoring and
                                 analyzing all data related to credit operations.
                             </p>
                             <p class="text-slate-600 leading-relaxed mb-3">
-                                I've been working on the creation of the model deployment platform, and more recently
-                                shifted focus to training large language models for finance — starting from the ground
-                                up by building the domain vocabulary and implementing the tokenizer in Rust.
+                                I co-created a model registry, serving, and inference platform that scaled the credit
+                                team's loan decisioning infrastructure from 1 to 20+ models — including GPU-accelerated
+                                pipelines and online inference for credit card products — scoring more than 7M users.
+                            </p>
+                            <p class="text-slate-600 leading-relaxed mb-3">
+                                Currently, I'm building the next generation of financial models: a tokenizer for
+                                financial events (implemented in Rust), pre-training and fine-tuning transformer-based
+                                models on GPU clusters.
                             </p>
                         </div>
 
@@ -152,7 +157,7 @@
                 </div>
             </article>
 
-            <!-- EXPERIENCE CARD 1: Nubank -->
+            <!-- EXPERIENCE CARD 1: Nubank (4 roles) -->
             <article class="content-card relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-1 h-full bg-indigo-500"></div>
                 <div class="flex flex-col md:flex-row gap-6 items-start">
@@ -167,8 +172,8 @@
                     <div class="flex-grow w-full">
                         <div class="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
                             <div>
-                                <h3 class="font-serif text-xl font-bold text-slate-900">Machine Learning Engineer</h3>
-                                <div class="text-indigo-600 font-medium">Nubank</div>
+                                <h3 class="font-serif text-xl font-bold text-slate-900">Nubank</h3>
+                                <div class="text-indigo-600 font-medium">Machine Learning Engineer</div>
                             </div>
                             <span
                                 class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 whitespace-nowrap">
@@ -176,24 +181,70 @@
                             </span>
                         </div>
 
-                        <div class="prose prose-slate max-w-none mt-4">
-                            <p class="text-slate-600 leading-relaxed mb-3">
-                                Implemented and deployed risk and spending ML models in both online and batch
-                                environments,
-                                increasing predictive performance and business value for millions of customers.
-                            </p>
-                            <p class="text-slate-600 leading-relaxed">
-                                Developed a comprehensive monitoring platform using Spark Scala for key metrics,
-                                streamlining
-                                dataset creation and enhancing analytics capabilities for stakeholders across the
-                                organization.
-                            </p>
+                        <p class="text-slate-600 leading-relaxed mt-4 mb-6">
+                            The largest digital bank outside Asia, serving 100M+ customers. Four roles across the
+                            Credit and Platform teams:
+                        </p>
+
+                        <div class="space-y-6">
+                            <div class="border-l-2 border-indigo-200 pl-4">
+                                <div class="flex flex-col md:flex-row md:items-center justify-between gap-1">
+                                    <h4 class="font-semibold text-slate-900">ML Engineer — Platform Team</h4>
+                                    <span class="text-xs text-slate-500 whitespace-nowrap">09/2025 - 12/2025</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mt-2">
+                                    Spearheaded a centralized Feature Store standardizing feature discovery and
+                                    versioning for 30+ teams. Architected data immutability systems with Delta Lake,
+                                    built low-latency APIs for global feature discovery, and developed an MCP to help
+                                    agents interact with the Feature Store.
+                                </p>
+                            </div>
+
+                            <div class="border-l-2 border-indigo-200 pl-4">
+                                <div class="flex flex-col md:flex-row md:items-center justify-between gap-1">
+                                    <h4 class="font-semibold text-slate-900">ML Engineer — Credit Team</h4>
+                                    <span class="text-xs text-slate-500 whitespace-nowrap">09/2024 - 09/2025</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mt-2">
+                                    Engineered a Python model orchestration library (batch/real-time), cutting average
+                                    deployment time by 60%. Led the migration of monitoring services to a Spark/Scala
+                                    framework (5h to &lt;1h contribution lead time) and deployed a flexible binning
+                                    framework (3 months to 2 weeks change cycles). Mentored two junior engineers.
+                                </p>
+                            </div>
+
+                            <div class="border-l-2 border-indigo-200 pl-4">
+                                <div class="flex flex-col md:flex-row md:items-center justify-between gap-1">
+                                    <h4 class="font-semibold text-slate-900">Junior ML Engineer</h4>
+                                    <span class="text-xs text-slate-500 whitespace-nowrap">12/2023 - 09/2024</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mt-2">
+                                    Refactored, retrained, and redeployed major versions of Nubank's primary risk and
+                                    spend model, improving performance by nearly 2 percentage points. Developed
+                                    architectural tests for a new population, impacting 500k+ potential clients.
+                                </p>
+                            </div>
+
+                            <div class="border-l-2 border-indigo-200 pl-4">
+                                <div class="flex flex-col md:flex-row md:items-center justify-between gap-1">
+                                    <h4 class="font-semibold text-slate-900">ML Engineering Intern</h4>
+                                    <span class="text-xs text-slate-500 whitespace-nowrap">09/2022 - 12/2023</span>
+                                </div>
+                                <p class="text-slate-600 leading-relaxed mt-2">
+                                    Migrated the Curves framework to a modern stack, boosting Business Analytics
+                                    productivity. Integrated two new data providers into the primary credit risk
+                                    pipeline (batch and online) and retrained key model versions.
+                                </p>
+                            </div>
                         </div>
 
                         <div class="mt-4 flex flex-wrap gap-2">
                             <span
                                 class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Machine
                                 Learning</span>
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Feature
+                                Store</span>
                             <span
                                 class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Spark
                                 Scala</span>
@@ -205,7 +256,55 @@
                 </div>
             </article>
 
-            <!-- EXPERIENCE CARD 2: MGITech -->
+            <!-- EXPERIENCE CARD 2: Embrapii / Huawei Solar -->
+            <article class="content-card relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-1 h-full bg-slate-300"></div>
+                <div class="flex flex-col md:flex-row gap-6 items-start">
+                    <div class="flex-shrink-0">
+                        <div class="w-16 h-16 rounded-xl bg-white border border-slate-200 overflow-hidden shadow-sm">
+                            <img src="../assets/images/companies/embrapii-logo.jpeg" alt="Embrapii Logo"
+                                class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+
+                    <div class="flex-grow w-full">
+                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
+                            <div>
+                                <h3 class="font-serif text-xl font-bold text-slate-900">Machine Learning Engineer (Research Project)</h3>
+                                <div class="text-slate-600 font-medium">Huawei / Embrapii — Solar Tracking Control (AI Based)</div>
+                            </div>
+                            <span
+                                class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 whitespace-nowrap">
+                                02/2022 - 08/2022
+                            </span>
+                        </div>
+
+                        <div class="prose prose-slate max-w-none mt-4">
+                            <p class="text-slate-600 leading-relaxed mb-3">
+                                Deployed Random Forest models on a 50,000-point solar characterization dataset,
+                                increasing the plant's energy generation efficiency by up to 12%.
+                            </p>
+                            <p class="text-slate-600 leading-relaxed">
+                                Built a feature serving system using Airflow and InfluxDB to process IoT sensor data
+                                with sub-500ms latency, enabling real-time analysis for energy optimization.
+                            </p>
+                        </div>
+
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Data
+                                Science</span>
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">NoSQL</span>
+                            <span
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Renewable
+                                Energy</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- EXPERIENCE CARD 3: MGITech -->
             <article class="content-card relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-1 h-full bg-slate-300"></div>
                 <div class="flex flex-col md:flex-row gap-6 items-start">
@@ -219,8 +318,8 @@
                     <div class="flex-grow w-full">
                         <div class="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
                             <div>
-                                <h3 class="font-serif text-xl font-bold text-slate-900">Data Engineer</h3>
-                                <div class="text-slate-600 font-medium">MGITech / Lagid</div>
+                                <h3 class="font-serif text-xl font-bold text-slate-900">Data Engineer (Research Project)</h3>
+                                <div class="text-slate-600 font-medium">MGI Tech</div>
                             </div>
                             <span
                                 class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 whitespace-nowrap">
@@ -250,13 +349,13 @@
                 </div>
             </article>
 
-            <!-- EXPERIENCE CARD 3: Huawei -->
+            <!-- EXPERIENCE CARD 4: Embrapii / Huawei Cloud AI Training -->
             <article class="content-card relative overflow-hidden">
                 <div class="absolute top-0 left-0 w-1 h-full bg-slate-300"></div>
                 <div class="flex flex-col md:flex-row gap-6 items-start">
                     <div class="flex-shrink-0">
                         <div class="w-16 h-16 rounded-xl bg-white border border-slate-200 overflow-hidden shadow-sm">
-                            <img src="../assets/images/companies/embrapii-logo.jpeg" alt="Huawei Logo"
+                            <img src="../assets/images/certifications/huawei_cert.jpeg" alt="Huawei"
                                 class="w-full h-full object-cover" />
                         </div>
                     </div>
@@ -264,46 +363,35 @@
                     <div class="flex-grow w-full">
                         <div class="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
                             <div>
-                                <h3 class="font-serif text-xl font-bold text-slate-900">Data Scientist</h3>
+                                <h3 class="font-serif text-xl font-bold text-slate-900">Cloud AI Training PB</h3>
                                 <div class="text-slate-600 font-medium">Huawei / Embrapii</div>
                             </div>
                             <span
                                 class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-slate-100 text-slate-600 whitespace-nowrap">
-                                02/2022 - 08/2022
+                                03/2021 - 07/2021
                             </span>
                         </div>
 
                         <div class="prose prose-slate max-w-none mt-4">
-                            <p class="text-slate-600 leading-relaxed mb-3">
-                                Collected and refined sensor data for optimized positioning of solar panels at a
-                                photovoltaic
-                                generation plant, contributing to renewable energy efficiency research.
-                            </p>
-                            <p class="text-slate-600 leading-relaxed mb-3">
-                                Stored time-series data in NoSQL databases, enabling real-time analysis and performance
-                                insights for energy optimization.
-                            </p>
                             <p class="text-slate-600 leading-relaxed">
-                                Modeled and trained high-accuracy machine learning models to maximize energy output and
-                                operational efficiency in solar energy systems.
+                                Monitored and developed research activities within the Artificial Intelligence Training
+                                scope (HCIA AI 3.0 Certification). Created tooling to facilitate the students' routine.
                             </p>
                         </div>
 
                         <div class="mt-4 flex flex-wrap gap-2">
                             <span
-                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Data
-                                Science</span>
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">AI
+                                Training</span>
                             <span
-                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">NoSQL</span>
-                            <span
-                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Renewable
-                                Energy</span>
+                                class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">Research</span>
                         </div>
                     </div>
                 </div>
             </article>
 
         </div>
+    
     </main>
 
     <!-- FOOTER -->
