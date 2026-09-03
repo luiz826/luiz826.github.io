@@ -1,5 +1,17 @@
 [
     {
+        "slug": "predicting-the-2026-world-cup",
+        "title": "Predicting the 2026 World Cup — and beating the bookmakers",
+        "date": "2026-07-21",
+        "lang": "en-US",
+        "tags": [
+            "machine learning",
+            "football",
+            "data science"
+        ],
+        "excerpt": "I ran a model that predicted every World Cup match before kickoff — and by the final it was beating the bookmakers on accuracy. The honest story."
+    },
+    {
         "slug": "o-vale-das-nossas-mentes",
         "title": "o vale das nossas mentes",
         "date": "2026-05-22",
