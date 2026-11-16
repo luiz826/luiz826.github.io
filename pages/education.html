@@ -1,244 +1,120 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Education | Luiz Fernando</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Academic background and education of Luiz Fernando, including Bachelor's Degree in Data Science and AI.">
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Education — Luiz Fernando</title>
+    <meta name="description" content="Education of Luiz Fernando: M.S. in Computer Science at UT Austin, B.S. in Data Science and AI at UFPB.">
+    <meta name="author" content="Luiz Fernando Costa dos Santos">
+    <meta name="theme-color" content="#bcc9d9">
+    <link rel="canonical" href="https://luiz826.github.io/pages/education.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Luiz Fernando">
+    <meta property="og:title" content="Education — Luiz Fernando">
+    <meta property="og:description" content="Education of Luiz Fernando: M.S. in Computer Science at UT Austin, B.S. in Data Science and AI at UFPB.">
+    <meta property="og:url" content="https://luiz826.github.io/pages/education.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23bcc9d9'/%3E%3Crect x='18' y='6' width='14' height='20' fill='%23151a24'/%3E%3Crect x='4' y='9' width='10' height='2.5' fill='%23151a24'/%3E%3Crect x='4' y='15' width='10' height='2.5' fill='%23151a24'/%3E%3Crect x='4' y='21' width='7' height='2.5' fill='%23151a24'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Custom styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'serif': ['Charter', 'Georgia', 'serif'],
-                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: '#0f172a',
-                        accent: '#6366f1',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-100 selection:text-indigo-900">
+<body>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <!-- NAVIGATION -->
-    <header
-        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <!-- Logo -->
-            <a href="../index.html"
-                class="font-serif font-bold text-2xl text-slate-900 tracking-tight hover:text-indigo-600 transition-colors">
-                Luiz Fernando
-            </a>
-
-            <!-- Desktop Nav -->
-            <nav class="hidden md:block">
-                <ul class="flex items-center space-x-8 text-sm font-medium text-slate-600">
-                    <li><a href="../index.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Home</a></li>
-                    <li><a href="experience.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Experience</a></li>
-                    <li><a href="education.html" class="text-indigo-600 font-semibold">Education</a></li>
-                    <li><a href="projects.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Projects</a></li>
-                    <li><a href="extracurricular.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Extracurricular</a>
-                    </li>
-                    <li><a href="certifications.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Certifications</a></li>
-                    <li><a href="curriculum.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Curriculum</a></li>
-                    <li><a href="blog.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Blog</a></li>
-                </ul>
-            </nav>
-
-            <!-- Mobile Menu Button -->
-            <button class="md:hidden text-slate-600 hover:text-slate-900">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
+    <header class="topbar">
+        <a class="chip" href="../index.html">Luiz Fernando</a>
+        <nav aria-label="Sections">
+            <ul>
+                <li><a class="chip" href="../pages/experience.html">Experience</a></li>
+                <li><a class="chip" href="../pages/education.html" aria-current="page">Education</a></li>
+                <li><a class="chip" href="../pages/projects.html">Projects</a></li>
+                <li><a class="chip" href="../pages/extracurricular.html">Activities</a></li>
+                <li><a class="chip" href="../pages/certifications.html">Certifications</a></li>
+                <li><a class="chip" href="../pages/blog.html">Writing</a></li>
+            </ul>
+        </nav>
+        <a class="chip chip--ink" href="../pages/curriculum.html">CV</a>
     </header>
 
-    <main class="flex-grow page-container">
-        <div class="section-header animate-fade-in">
-            <h1 class="section-title">Education</h1>
-            <p class="section-description">
-                My academic journey and formal education background, highlighting my commitment to learning and growth.
-            </p>
-        </div>
+    <div class="tab" style="--tab-step: 2" aria-hidden="true">EDU</div>
 
-        <div class="space-y-8 max-w-4xl mx-auto animate-fade-in delay-200">
+    <main id="main" class="sheet">
+        <header class="pagehead">
+            <p class="runhead"><b>LF826-HB-(1)</b><span>Section 3</span><span>Systems data</span></p>
+            <h1 class="title title--page">Education</h1>
+            <p class="lede">A master's in computer science in progress at UT Austin, on top of a bachelor's in data
+                science and AI from UFPB.</p>
+        </header>
 
-            <!-- Master's Degree -->
-            <article class="content-card relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-1 h-full bg-violet-500"></div>
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <div class="flex-shrink-0 mx-auto md:mx-0">
-                        <div class="w-24 h-24 rounded-full bg-white border border-slate-200 p-1 shadow-md">
-                            <img src="../assets/images/projects/utaustin.jpg" alt="UT Austin Logo"
-                                class="w-full h-full rounded-full object-cover" />
-                        </div>
+        <section class="para" id="utaustin">
+            <p class="para__no">3.1 <img class="para__mark" src="../assets/images/projects/utaustin.jpg" width="400"
+                    height="400" alt="UT Austin logo"></p>
+            <div class="para__body">
+                <h2 class="entry__title">Master's Degree in Computer Science</h2>
+                <p class="entry__meta"><span><a href="https://www.utexas.edu/">The University of Texas at
+                            Austin</a></span><span>2026 to 2028</span><span>In progress</span></p>
+                <p>Enrolled in the online Master's program since Fall 2026 at one of the top public research
+                    universities in the United States, deepening expertise in machine learning, artificial
+                    intelligence, and large-scale systems. Current coursework includes Advanced Linear Algebra for
+                    Computing.</p>
+            </div>
+        </section>
+
+        <section class="para" id="ufpb">
+            <p class="para__no">3.2 <img class="para__mark" src="../assets/images/projects/ci.jpg" width="136"
+                    height="134" alt="UFPB Informatics Center logo"></p>
+            <div class="para__body">
+                <h2 class="entry__title">Bachelor's Degree in Data Science and AI</h2>
+                <p class="entry__meta"><span><a href="https://www.ufpb.br/">Federal University of
+                            Paraíba</a></span><span>2020 to 2025</span><span>GPA 9.43/10.0</span></p>
+                <p>Comprehensive program covering software engineering, data structures, algorithms, computer
+                    networks, artificial intelligence, and machine learning. Graduated 2nd of class and served as
+                    Teaching Fellow for Introduction to Data Science (30+ students).</p>
+
+                <div class="sub">
+                    <p class="sub__no">3.2.1</p>
+                    <div>
+                        <h3 class="sub__head"><span>Relevant Coursework.</span></h3>
+                        <p>Data Structures and Algorithms, Software Engineering, Database Systems, Deep Learning,
+                            Artificial Intelligence, Machine Learning, Operational Research, Non-linear
+                            Optimization, and Big Data.</p>
                     </div>
-
-                    <div class="flex-grow w-full">
-                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
-                            <div>
-                                <h3 class="font-serif text-2xl font-bold text-slate-900">Master's Degree in Computer
-                                    Science</h3>
-                                <div class="text-violet-600 font-medium text-lg">The University of Texas at Austin</div>
-                            </div>
-                            <div class="text-right">
-                                <span class="block text-sm font-medium text-slate-500">2026 - 2028</span>
-                                <span
-                                    class="inline-block mt-1 px-2 py-0.5 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">In Progress</span>
-                            </div>
-                        </div>
-
-                        <div class="prose prose-slate max-w-none mt-6">
-                            <p class="text-slate-600 leading-relaxed">
-                                Enrolled in the online Master's program since Fall 2026 at one of the top
-                                public research universities in the United States, deepening expertise in machine
-                                learning, artificial intelligence, and large-scale systems. Current coursework includes
-                                Advanced Linear Algebra for Computing.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- University Degree -->
-            <article class="content-card relative overflow-hidden">
-                <div class="absolute top-0 left-0 w-1 h-full bg-indigo-500"></div>
-                <div class="flex flex-col md:flex-row gap-8 items-start">
-                    <div class="flex-shrink-0 mx-auto md:mx-0">
-                        <div class="w-24 h-24 rounded-full bg-white border border-slate-200 p-1 shadow-md">
-                            <img src="../assets/images/projects/ci.jpg" alt="University Logo"
-                                class="w-full h-full rounded-full object-cover" />
-                        </div>
-                    </div>
-
-                    <div class="flex-grow w-full">
-                        <div class="flex flex-col md:flex-row md:items-center justify-between mb-2 gap-2">
-                            <div>
-                                <h3 class="font-serif text-2xl font-bold text-slate-900">Bachelor's Degree in Data
-                                    Science and AI</h3>
-                                <div class="text-indigo-600 font-medium text-lg">Federal University of Paraíba</div>
-                            </div>
-                            <div class="text-right">
-                                <span class="block text-sm font-medium text-slate-500">2020 - 2025</span>
-                                <span
-                                    class="inline-block mt-1 px-2 py-0.5 bg-green-100 text-green-700 text-xs font-bold rounded">GPA:
-                                    9.43/10.0</span>
-                            </div>
-                        </div>
-
-                        <div class="prose prose-slate max-w-none mt-6">
-                            <p class="text-slate-600 leading-relaxed mb-4">
-                                Comprehensive program covering software engineering, data structures, algorithms,
-                                computer networks, artificial intelligence, and machine learning. Graduated 2nd of
-                                class and served as Teaching Fellow for Introduction to Data Science (30+ students).
-                            </p>
-
-                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                                <h4 class="font-semibold text-slate-900 mb-2 text-sm uppercase tracking-wide">Relevant
-                                    Coursework</h4>
-                                <p class="text-sm text-slate-600 leading-relaxed">
-                                    Data Structures and Algorithms, Software Engineering, Database Systems, Deep
-                                    Learning,
-                                    Artificial Intelligence, Machine Learning, Operational Research, Non-linear
-                                    Optimization, and Big Data.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-
-            <!-- Continuous Learning
-            <article class="content-card bg-gradient-to-br from-white to-slate-50">
-                <div class="flex items-center gap-3 mb-6">
-                    <div class="p-2 bg-indigo-100 rounded-lg text-indigo-600">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                        </svg>
-                    </div>
-                    <h3 class="font-serif text-2xl font-bold text-slate-900">Continuous Learning</h3>
-                </div>
-
-                <div class="prose prose-slate max-w-none">
-                    <p class="text-slate-600 leading-relaxed">
-                        Beyond formal education, I maintain a commitment to continuous learning through
-                        online courses, technical certifications, and hands-on projects. I regularly
-                        study emerging technologies in machine learning, cloud computing, and software
-                        architecture.
-                    </p>
-                    <p class="text-slate-600 leading-relaxed">
-                        My learning philosophy emphasizes practical application alongside theoretical
-                        understanding, which has helped me stay current with rapidly evolving
-                        technology landscapes.
-                    </p>
-                    <div class="mt-4 p-4 bg-violet-50 border border-violet-100 rounded-lg">
-                        <p class="text-violet-900 font-medium text-sm">
-                            🎓 <strong>Next chapter:</strong> Starting my Master's in Computer Science at
-                            The University of Texas at Austin, focusing on machine learning and AI.
-                        </p>
-                    </div>
-                </div>
-            </article> -->
-
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="bg-white border-t border-slate-200 py-12">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="text-center md:text-left">
-                    <span class="font-serif font-bold text-xl text-slate-900">Luiz Fernando</span>
-                    <p class="text-slate-500 text-sm mt-2">
-                        © 2026 Luiz Fernando Costa dos Santos. All rights reserved.
-                    </p>
-                </div>
-
-                <div class="flex space-x-8">
-                    <a href="../index.html"
-                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Home</a>
-                    <a href="projects.html"
-                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Projects</a>
-                    <a href="experience.html"
-                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Experience</a>
-                    <a href="../index.html#contact"
-                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Contact</a>
                 </div>
             </div>
+        </section>
+
+        <section class="para" id="publications">
+            <p class="para__no">3.3</p>
+            <div class="para__body">
+                <h2 class="para__head">Publications.</h2>
+                <h3 class="entry__title"><a href="https://doi.org/10.5753/erbd.2025.7365">Generation-to-Storage Data
+                        Framework for Large-Scale Carbon Sequestration Simulation Datasets</a></h3>
+                <p class="entry__meta"><span>ERBD</span><span>2025</span></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="sheet">
+        <div class="foot">
+            <p class="foot__name">Luiz Fernando Costa dos Santos</p>
+            <dl class="foot__dates">
+                <div><dt>Station</dt><dd>João Pessoa, BR</dd></div>
+                <div><dt>Basic Date</dt><dd>27 March 2025</dd></div>
+                <div><dt>Change Date</dt><dd>16 November 2026</dd></div>
+                <div><dt>Page</dt><dd>3-1</dd></div>
+            </dl>
+            <ul class="links">
+                <li><a href="https://github.com/luiz826">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/luizfernando632/">LinkedIn</a></li>
+                <li><a href="mailto:luizfernando1012000@gmail.com">Email</a></li>
+                <li><a href="https://www.instagram.com/luiz_fernando.ipynb/">Instagram</a></li>
+            </ul>
         </div>
     </footer>
-
 </body>
 
 </html>

@@ -1,868 +1,466 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Projects | Luiz Fernando</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Showcase of technical projects by Luiz Fernando, covering Machine Learning, Data Engineering, and Full-Stack Development.">
-
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Google Fonts -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects — Luiz Fernando</title>
+    <meta name="description" content="Technical projects by Luiz Fernando across machine learning, data engineering and algorithms.">
+    <meta name="author" content="Luiz Fernando Costa dos Santos">
+    <meta name="theme-color" content="#bcc9d9">
+    <link rel="canonical" href="https://luiz826.github.io/pages/projects.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Luiz Fernando">
+    <meta property="og:title" content="Projects — Luiz Fernando">
+    <meta property="og:description" content="Technical projects by Luiz Fernando across machine learning, data engineering and algorithms.">
+    <meta property="og:url" content="https://luiz826.github.io/pages/projects.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23bcc9d9'/%3E%3Crect x='18' y='6' width='14' height='20' fill='%23151a24'/%3E%3Crect x='4' y='9' width='10' height='2.5' fill='%23151a24'/%3E%3Crect x='4' y='15' width='10' height='2.5' fill='%23151a24'/%3E%3Crect x='4' y='21' width='7' height='2.5' fill='%23151a24'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- Custom styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'serif': ['Charter', 'Georgia', 'serif'],
-                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: '#0f172a',
-                        accent: '#6366f1',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-100 selection:text-indigo-900">
+<body>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <!-- NAVIGATION -->
-    <header
-        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <!-- Logo -->
-            <a href="../index.html"
-                class="font-serif font-bold text-2xl text-slate-900 tracking-tight hover:text-indigo-600 transition-colors">
-                Luiz Fernando
-            </a>
-
-            <!-- Desktop Nav -->
-            <nav class="hidden md:block">
-                <ul class="flex items-center space-x-8 text-sm font-medium text-slate-600">
-                    <li><a href="../index.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Home</a></li>
-                    <li><a href="experience.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Experience</a></li>
-                    <li><a href="education.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Education</a></li>
-                    <li><a href="projects.html" class="text-indigo-600 font-semibold">Projects</a></li>
-                    <li><a href="extracurricular.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Extracurricular</a>
-                    </li>
-                    <li><a href="certifications.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Certifications</a></li>
-                    <li><a href="curriculum.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Curriculum</a></li>
-                    <li><a href="blog.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Blog</a></li>
-                </ul>
-            </nav>
-
-            <!-- Mobile Menu Button -->
-            <button class="md:hidden text-slate-600 hover:text-slate-900">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
+    <header class="topbar">
+        <a class="chip" href="../index.html">Luiz Fernando</a>
+        <nav aria-label="Sections">
+            <ul>
+                <li><a class="chip" href="../pages/experience.html">Experience</a></li>
+                <li><a class="chip" href="../pages/education.html">Education</a></li>
+                <li><a class="chip" href="../pages/projects.html" aria-current="page">Projects</a></li>
+                <li><a class="chip" href="../pages/extracurricular.html">Activities</a></li>
+                <li><a class="chip" href="../pages/certifications.html">Certifications</a></li>
+                <li><a class="chip" href="../pages/blog.html">Writing</a></li>
+            </ul>
+        </nav>
+        <a class="chip chip--ink" href="../pages/curriculum.html">CV</a>
     </header>
 
-    <main class="flex-grow page-container">
-        <div class="section-header animate-fade-in">
-            <h1 class="section-title">Projects</h1>
-            <p class="section-description">
-                A showcase of my technical projects and contributions across different domains.
-            </p>
-        </div>
+    <div class="tab" style="--tab-step: 3" aria-hidden="true">PRJ</div>
 
-        <div class="space-y-16 animate-fade-in delay-200">
+    <main id="main" class="sheet">
+        <header class="pagehead">
+            <p class="runhead"><b>LF826-HB-(1)</b><span>Section 4</span><span>Systems data</span></p>
+            <h1 class="title title--page">Projects</h1>
+            <p class="lede">Technical projects and contributions across machine learning, data engineering and
+                algorithms.</p>
+        </header>
 
-            <!-- PROJECT: Raise Your Hand -->
-            <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-10 items-start">
-                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
-                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
-                            <img src="../assets/images/projects/raise-your-hand.gif"
-                                alt="Raise Your Hand Extension Demo"
-                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                        </div>
+        <section class="para" id="raise-your-hand">
+            <p class="para__no">4.1</p>
+            <div class="para__body">
+                <h2 class="entry__title"><a href="https://github.com/luiz826/raise-your-hand">Raise Your Hand</a></h2>
+                <p class="entry__meta"><span>AI, Chrome Extension</span></p>
+                <div class="split">
+                    <div>
+                        <p>Chrome extension that turns YouTube university lectures into an interactive classroom. Pause a lecture and literally raise your hand: a webcam gesture detector triggers a course-aware voice TA that has read the entire playlist, answers out loud in your language, renders math and diagrams, and never spoils what the course hasn't taught yet.</p>
+                        <ul class="points">
+                            <li>Full voice loop: streaming STT to LLM to sentence-level streamed TTS, with barge-in (talk over the TA to interrupt)</li>
+                            <li>Hand-raise detection with MediaPipe running in an offscreen document (Manifest V3)</li>
+                            <li>Course-map ingestion from lecture transcripts: spoiler-safe, timestamp-cited answers grounded in the syllabus</li>
+                            <li>Production deploy: Node backend + Python voice services behind Caddy on a VPS, with rate limiting and per-IP cost guards</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>TypeScript</li>
+                            <li>Chrome MV3</li>
+                            <li>Node.js</li>
+                            <li>Python</li>
+                            <li>Claude API</li>
+                            <li>OpenAI</li>
+                            <li>MediaPipe</li>
+                            <li>Docker</li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="https://github.com/luiz826/raise-your-hand">GitHub</a></li>
+                        </ul>
                     </div>
-
-                    <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4 flex-wrap">
-                            <h3 class="font-serif text-2xl font-bold text-slate-900">
-                                <a href="https://github.com/luiz826/raise-your-hand" target="_blank" rel="noopener noreferrer"
-                                    class="hover:text-indigo-600 transition-colors">
-                                    ✋ Raise Your Hand
-                                </a>
-                            </h3>
-                            <span
-                                class="px-3 py-1 bg-amber-100 text-amber-700 text-xs font-semibold uppercase tracking-wide rounded-full">
-                                AI · Chrome Extension
-                            </span>
+                    <figure class="fig">
+                        <div class="fig__frame">
+                            <img src="../assets/images/projects/raise-your-hand.gif" width="960" height="540" alt="Raise Your Hand extension demo" decoding="async">
                         </div>
-
-                        <div class="prose prose-slate max-w-none mb-6">
-                            <p class="text-slate-600 leading-relaxed">
-                                Chrome extension that turns YouTube university lectures into an interactive classroom. Pause a
-                                lecture and literally raise your hand — a webcam gesture detector triggers a course-aware voice
-                                TA that has read the entire playlist, answers out loud in your language, renders math and
-                                diagrams, and never spoils what the course hasn't taught yet.
-                            </p>
-                        </div>
-
-                        <div class="space-y-4 mb-8">
-                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
-                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                                    <li>Full voice loop: streaming STT → LLM → sentence-level streamed TTS, with barge-in (talk over the TA to interrupt)</li>
-                                    <li>Hand-raise detection with MediaPipe running in an offscreen document (Manifest V3)</li>
-                                    <li>Course-map ingestion from lecture transcripts — spoiler-safe, timestamp-cited answers grounded in the syllabus</li>
-                                    <li>Production deploy: Node backend + Python voice services behind Caddy on a VPS, with rate limiting and per-IP cost guards</li>
-                                </ul>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">TypeScript</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Chrome MV3</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Node.js</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Claude API</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">OpenAI</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">MediaPipe</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Docker</span>
-                            </div>
-                        </div>
-
-                        <a href="https://github.com/luiz826/raise-your-hand" target="_blank"
-                            class="btn-primary inline-flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                            GitHub
-                        </a>
-                    </div>
+                        <p class="fig__code">LF-401A</p>
+                        <figcaption>Figure 4-1. Raise Your Hand</figcaption>
+                    </figure>
                 </div>
-            </article>
+            </div>
+        </section>
 
-            <!-- PROJECT: Diet Pandas -->
-            <article class="content-card">
-                <!-- <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm mb-6">
-                    <div
-                        class="aspect-video bg-gradient-to-br from-indigo-50 to-purple-50 relative overflow-hidden flex items-center justify-center p-8">
-                        <div class="text-center">
-                            <div class="text-6xl mb-4">🐼🥗</div>
-                            <div class="font-serif text-2xl font-bold text-slate-800">Diet Pandas</div>
-                            <div class="text-slate-600 mt-2">Same taste, half the RAM</div>
-                        </div>
-                    </div>
-                </div> -->
-
-                <div class="flex items-center gap-3 mb-4 flex-wrap">
-                    <h3 class="font-serif text-2xl font-bold text-slate-900">
-                        <a href="https://pypi.org/project/diet-pandas/" target="_blank" rel="noopener noreferrer"
-                            class="hover:text-indigo-600 transition-colors">
-                            Diet Pandas
-                        </a>
-                    </h3>
-                    <span
-                        class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold uppercase tracking-wide rounded-full">
-                        Python Library
-                    </span>
-                </div>
-
-                <div class="prose prose-slate max-w-none mb-6">
-                    <p class="text-slate-600 leading-relaxed">
-                        Automated memory optimization library for Pandas DataFrames. Intelligently reduces memory usage
-                        by 50-80%
-                        through aggressive type downcasting while preserving data integrity. Published on PyPI with
-                        comprehensive documentation.
-                    </p>
-                </div>
-
-                <div class="space-y-4 mb-8">
-                    <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                        <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
-                        <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                            <li>Published on PyPI - available via <code>pip install diet-pandas</code></li>
+        <section class="para" id="diet-pandas">
+            <p class="para__no">4.2</p>
+            <div class="para__body">
+                <h2 class="entry__title"><a href="https://pypi.org/project/diet-pandas/">Diet Pandas</a></h2>
+                <p class="entry__meta"><span>Python Library</span></p>
+                    <div>
+                        <p>Automated memory optimization library for Pandas DataFrames. Intelligently reduces memory usage by 50-80% through aggressive type downcasting while preserving data integrity. Published on PyPI with comprehensive documentation.</p>
+                        <ul class="points">
+                            <li>Published on PyPI, available via pip install diet-pandas</li>
                             <li>50-80% memory reduction on real-world datasets (tested on 4.3M+ rows)</li>
                             <li>Drop-in replacement for pandas.read_csv with automatic optimization</li>
                             <li>Full documentation with MkDocs, benchmarks, and CI/CD pipeline</li>
                         </ul>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Pandas</li>
+                            <li>NumPy</li>
+                            <li>PyPI</li>
+                            <li>MkDocs</li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="https://github.com/luiz826/diet-pandas">GitHub</a></li>
+                            <li><a href="https://luiz826.github.io/diet-pandas/">Documentation</a></li>
+                            <li><a href="https://pypi.org/project/diet-pandas/">PyPI</a></li>
+                        </ul>
                     </div>
+            </div>
+        </section>
 
-                    <div class="flex flex-wrap gap-2">
-                        <span
-                            class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
-                        <span
-                            class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Pandas</span>
-                        <span
-                            class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">NumPy</span>
-                        <span
-                            class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">PyPI</span>
-                        <span
-                            class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">MkDocs</span>
+        <section class="para" id="rubber-duck">
+            <p class="para__no">4.3</p>
+            <div class="para__body">
+                <h2 class="entry__title"><a href="https://rubber-duck-sigma.vercel.app/">Rubber Duck Detection</a></h2>
+                <p class="entry__meta"><span>Computer Vision</span></p>
+                <div class="split">
+                    <div>
+                        <p>Intelligent rubber duck detection system powered by YOLO deep learning architecture. Specifically designed for identifying rubber ducks in various environments with high accuracy and real-time processing capabilities.</p>
+                        <ul class="points">
+                            <li>YOLO-based object detection for precise localization</li>
+                            <li>Robust to various lighting and weather conditions</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>YOLO</li>
+                            <li>OpenCV</li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="https://github.com/luiz826/rubber-duck">GitHub</a></li>
+                            <li><a href="https://rubber-duck-sigma.vercel.app/">Live demo</a></li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="flex gap-3">
-                    <a href="https://github.com/luiz826/diet-pandas" target="_blank"
-                        class="btn-primary inline-flex items-center gap-2">
-                        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                            <path fill-rule="evenodd"
-                                d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                clip-rule="evenodd" />
-                        </svg>
-                        GitHub
-                    </a>
-                    <a href="https://luiz826.github.io/diet-pandas/" target="_blank"
-                        class="inline-flex items-center gap-2 px-6 py-2.5 bg-white border-2 border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 hover:border-slate-400 transition-all duration-200 font-medium text-sm">
-                        📚 Documentation
-                    </a>
-                </div>
-            </article>
-
-            <!-- PROJECT: Rubber Duck Detection -->
-            <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-10 items-start">
-                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
-                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
-                            <img src="../assets/images/projects/rubber-duck-gif-2.gif"
-                                alt="Rubber Duck Detection Project Demo"
-                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+                    <figure class="fig">
+                        <div class="fig__frame">
+                            <img src="../assets/images/projects/rubber-duck-gif-2.gif" width="1080" height="608" alt="Rubber Duck Detection demo" loading="lazy" decoding="async">
                         </div>
-                    </div>
-
-                    <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4 flex-wrap">
-                            <h3 class="font-serif text-2xl font-bold text-slate-900">
-                                <a href="https://rubber-duck-sigma.vercel.app/" target="_blank"
-                                    rel="noopener noreferrer" class="hover:text-indigo-600 transition-colors">
-                                    Rubber Duck Detection
-                                </a>
-                            </h3>
-                            <span
-                                class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold uppercase tracking-wide rounded-full">Computer
-                                Vision</span>
-                        </div>
-
-                        <div class="prose prose-slate max-w-none mb-6">
-                            <p class="text-slate-600 leading-relaxed">
-                                Intelligent rubber duck detection system powered by YOLO deep learning architecture.
-                                Specifically designed for identifying rubber ducks in various environments with high
-                                accuracy and real-time processing capabilities.
-                            </p>
-                        </div>
-
-                        <div class="space-y-4 mb-8">
-                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
-                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                                    <li>YOLO-based object detection for precise localization</li>
-                                    <li>Robust to various lighting and weather conditions</li>
-                                </ul>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">YOLO</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">OpenCV</span>
-                            </div>
-                        </div>
-
-                        <a href="https://github.com/luiz826/rubber-duck" target="_blank"
-                            class="btn-primary inline-flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- PROJECT: Realtime Anomaly Engine -->
-            <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-10 items-start">
-                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
-                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
-                            <img src="../assets/images/projects/demo-e-comerce.gif" alt="Real-Time Anomaly Engine Demo"
-                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                        </div>
-                    </div>
-
-                    <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4 flex-wrap">
-                            <h3 class="font-serif text-2xl font-bold text-slate-900">Real-Time Anomaly Engine</h3>
-                            <span
-                                class="px-3 py-1 bg-indigo-100 text-indigo-700 text-xs font-semibold uppercase tracking-wide rounded-full">Streaming
-                                & Observability</span>
-                        </div>
-
-                        <div class="prose prose-slate max-w-none mb-6">
-                            <p class="text-slate-600 leading-relaxed">
-                                Production-ready real-time anomaly detection engine for e-commerce logs. It combines
-                                high-throughput Kafka ingestion, Spark structured streaming, and TimescaleDB for metrics
-                                storage, plus LLM-powered insights.
-                            </p>
-                        </div>
-
-                        <div class="space-y-4 mb-8">
-                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
-                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                                    <li>End-to-end streaming pipeline with Kafka and Spark</li>
-                                    <li>RAG pipeline + embeddings for LLM-guided root cause insights</li>
-                                    <li>Automatic anomaly detection with alerting</li>
-                                </ul>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Spark</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Kafka</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">LangChain</span>
-                            </div>
-                        </div>
-
-                        <a href="https://github.com/luiz826/realtime-anomaly-engine" target="_blank"
-                            class="btn-primary inline-flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- PROJECT: Soletras -->
-            <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-10 items-start">
-                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
-                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
-                            <img src="../assets/images/projects/soletras.png" alt="Soletras Project Demo"
-                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                        </div>
-                    </div>
-
-                    <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4 flex-wrap">
-                            <h3 class="font-serif text-2xl font-bold text-slate-900">
-                                <a href="https://soletras.vercel.app/" target="_blank" rel="noopener noreferrer"
-                                    class="hover:text-indigo-600 transition-colors">Soletras</a>
-                            </h3>
-                            <span
-                                class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold uppercase tracking-wide rounded-full">Full-Stack
-                                NLP</span>
-                        </div>
-
-                        <div class="prose prose-slate max-w-none mb-6">
-                            <p class="text-slate-600 leading-relaxed">
-                                Brazilian word searcher system that helps people complete the Brazilian SpellingBee.
-                                Features advanced filtering and search capabilities powered by SpaCy NLP.
-                            </p>
-                        </div>
-
-                        <div class="space-y-4 mb-8">
-                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
-                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                                    <li>SpaCy NLP to filter conjugated verbs and plurals</li>
-                                    <li>550,633+ Brazilian Portuguese words</li>
-                                    <li>Modern React 18 + Vite frontend</li>
-                                </ul>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Flask</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">React</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">SpaCy</span>
-                            </div>
-                        </div>
-
-                        <a href="https://github.com/luiz826/soletras" target="_blank"
-                            class="btn-primary inline-flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- PROJECT: PUMLE -->
-            <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-10 items-start">
-                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
-                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
-                            <img src="../assets/images/projects/gif-pumle.gif" alt="PUMLE Project Demo"
-                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                        </div>
-                    </div>
-
-                    <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4 flex-wrap">
-                            <h3 class="font-serif text-2xl font-bold text-slate-900">PUMLE</h3>
-                            <span
-                                class="px-3 py-1 bg-blue-100 text-blue-700 text-xs font-semibold uppercase tracking-wide rounded-full">Data
-                                Engineering</span>
-                        </div>
-
-                        <div class="prose prose-slate max-w-none mb-6">
-                            <p class="text-slate-600 leading-relaxed">
-                                Innovative data pipeline for geological carbon storage in Brazilian reservoirs.
-                                Transforms complex simulation outputs into streamlined multidimensional arrays.
-                            </p>
-                        </div>
-
-                        <div class="space-y-4 mb-8">
-                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
-                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                                    <li>Multi-format export (NumPy, Zarr, MAT-files, CSV)</li>
-                                    <li>Optimized for large-scale geological simulations</li>
-                                </ul>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">NumPy</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Zarr</span>
-                            </div>
-                        </div>
-
-                        <a href="https://github.com/luiz826/PUMLE" target="_blank"
-                            class="btn-primary inline-flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- PROJECT: Car Plate Detection -->
-            <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-10 items-start">
-                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
-                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
-                            <img src="../assets/images/projects/car-plate_gif.gif"
-                                alt="Car Plate Detection Project Demo"
-                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                        </div>
-                    </div>
-
-                    <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4 flex-wrap">
-                            <h3 class="font-serif text-2xl font-bold text-slate-900">Car Plate Detection</h3>
-                            <span
-                                class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold uppercase tracking-wide rounded-full">Computer
-                                Vision</span>
-                        </div>
-
-                        <div class="prose prose-slate max-w-none mb-6">
-                            <p class="text-slate-600 leading-relaxed">
-                                Intelligent license plate recognition system powered by YOLO deep learning architecture.
-                                Designed for Brazilian vehicle registration patterns with high accuracy.
-                            </p>
-                        </div>
-
-                        <div class="space-y-4 mb-8">
-                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
-                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                                    <li>YOLO-based object detection for precise plate localization</li>
-                                    <li>Character recognition optimized for Brazilian formats</li>
-                                </ul>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">YOLO</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">OpenCV</span>
-                            </div>
-                        </div>
-
-                        <a href="https://github.com/luiz826/plate-detection" target="_blank"
-                            class="btn-primary inline-flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- PROJECT: Michael Scott Generator -->
-            <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-10 items-start">
-                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
-                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
-                            <img src="../assets/images/projects/office-sentence.gif"
-                                alt="Michael Scott Generator Project Demo"
-                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                        </div>
-                    </div>
-
-                    <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4 flex-wrap">
-                            <h3 class="font-serif text-2xl font-bold text-slate-900">Michael Scott Speak Generator</h3>
-                            <span
-                                class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold uppercase tracking-wide rounded-full">NLP</span>
-                        </div>
-
-                        <div class="prose prose-slate max-w-none mb-6">
-                            <p class="text-slate-600 leading-relaxed">
-                                Text generation system powered by GPT-2 transformers architecture. Generates text in the
-                                style of Michael Scott from "The Office", leveraging advanced NLP techniques.
-                            </p>
-                        </div>
-
-                        <div class="space-y-4 mb-8">
-                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
-                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                                    <li>Fine-tuning on character-specific dialogue</li>
-                                    <li>Contextual understanding of "The Office" episodes</li>
-                                </ul>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Transformers</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">PyTorch</span>
-                            </div>
-                        </div>
-
-                        <a href="https://huggingface.co/luiz826/MichaelScottGenFinal" target="_blank"
-                            class="btn-primary inline-flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
-                            </svg>
-                            View on Hugging Face
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- PROJECT: Motion Coach -->
-            <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-10 items-start">
-                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
-                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
-                            <img src="../assets/images/projects/motion-coach.png" alt="Motion Coach Project Demo"
-                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                        </div>
-                    </div>
-
-                    <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4 flex-wrap">
-                            <h3 class="font-serif text-2xl font-bold text-slate-900">Motion Coach: Gym Assistant</h3>
-                            <span
-                                class="px-3 py-1 bg-green-100 text-green-700 text-xs font-semibold uppercase tracking-wide rounded-full">Computer
-                                Vision</span>
-                        </div>
-
-                        <div class="prose prose-slate max-w-none mb-6">
-                            <p class="text-slate-600 leading-relaxed">
-                                Innovative gym assistant application that leverages computer vision to provide real-time
-                                feedback on exercise form and technique. Achieved F1-score of 0.92.
-                            </p>
-                        </div>
-
-                        <div class="space-y-4 mb-8">
-                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
-                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                                    <li>Real-time pose detection and tracking</li>
-                                    <li>Form analysis using keypoint detection</li>
-                                </ul>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">FastAPI</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">MediaPipe</span>
-                            </div>
-                        </div>
-
-                        <a href="https://github.com/caiochacon/deep_pdi/tree/clean-branch" target="_blank"
-                            class="btn-primary inline-flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.48 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- PROJECT: Bin Packing -->
-            <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-10 items-start">
-                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
-                        <div class="aspect-video bg-slate-100 relative overflow-hidden">
-                            <img src="../assets/images/projects/bin-packing.jpg" alt="Bin Packing Project Demo"
-                                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
-                        </div>
-                    </div>
-
-                    <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4 flex-wrap">
-                            <h3 class="font-serif text-2xl font-bold text-slate-900">Bin Packing Optimizer</h3>
-                            <span
-                                class="px-3 py-1 bg-purple-100 text-purple-700 text-xs font-semibold uppercase tracking-wide rounded-full">Algorithms</span>
-                        </div>
-
-                        <div class="prose prose-slate max-w-none mb-6">
-                            <p class="text-slate-600 leading-relaxed">
-                                High-performance solution to the Variable-Sized Bin Packing Problem (VSBPP). Built from
-                                scratch in C++ to achieve optimal space utilization with minimal computational overhead.
-                            </p>
-                        </div>
-
-                        <div class="space-y-4 mb-8">
-                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
-                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                                    <li>Optimized C++ implementation for maximum speed</li>
-                                    <li>Variable-sized container support</li>
-                                </ul>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">C++</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Algorithms</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Optimization</span>
-                            </div>
-                        </div>
-
-                        <a href="https://github.com/luiz826/bin-packing" target="_blank"
-                            class="btn-primary inline-flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- PROJECT: Branch and Bound -->
-            <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-10 items-start">
-                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
-                        <div
-                            class="aspect-video bg-slate-100 relative overflow-hidden flex items-center justify-center">
-                            <img src="../assets/images/projects/bb.png" alt="Branch and Bound Project Demo"
-                                class="w-full h-full object-contain p-8 transform group-hover:scale-105 transition-transform duration-500" />
-                        </div>
-                    </div>
-
-                    <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4 flex-wrap">
-                            <h3 class="font-serif text-2xl font-bold text-slate-900">Branch and Bound</h3>
-                            <span
-                                class="px-3 py-1 bg-orange-100 text-orange-700 text-xs font-semibold uppercase tracking-wide rounded-full">Optimization</span>
-                        </div>
-
-                        <div class="prose prose-slate max-w-none mb-6">
-                            <p class="text-slate-600 leading-relaxed">
-                                Mathematical optimization powerhouse implementing the classic Branch and Bound
-                                algorithm. Designed to solve complex integer linear programming problems with guaranteed
-                                optimal solutions.
-                            </p>
-                        </div>
-
-                        <div class="space-y-4 mb-8">
-                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
-                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                                    <li>Classic Branch and Bound implementation</li>
-                                    <li>Integer linear programming solver</li>
-                                </ul>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Python</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">MIP</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Math</span>
-                            </div>
-                        </div>
-
-                        <a href="https://github.com/luiz826/branch_and_bound" target="_blank"
-                            class="btn-primary inline-flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-            <!-- PROJECT: NumPy from Scratch -->
-            <article class="content-card">
-                <div class="grid lg:grid-cols-2 gap-10 items-start">
-                    <div class="w-full group overflow-hidden rounded-xl border border-slate-200 shadow-sm">
-                        <div
-                            class="aspect-video bg-slate-100 relative overflow-hidden flex items-center justify-center">
-                            <img src="../assets/images/projects/numpy.svg" alt="NumPy from Scratch Project Demo"
-                                class="w-full h-full object-contain p-8 transform group-hover:scale-105 transition-transform duration-500" />
-                        </div>
-                    </div>
-
-                    <div class="w-full">
-                        <div class="flex items-center gap-3 mb-4 flex-wrap">
-                            <h3 class="font-serif text-2xl font-bold text-slate-900">NumPy from Scratch</h3>
-                            <span
-                                class="px-3 py-1 bg-red-100 text-red-700 text-xs font-semibold uppercase tracking-wide rounded-full">Low-Level</span>
-                        </div>
-
-                        <div class="prose prose-slate max-w-none mb-6">
-                            <p class="text-slate-600 leading-relaxed">
-                                Ground-up recreation of NumPy's core functionality using pure C programming.
-                                Demonstrates deep understanding of memory management, array operations, and performance
-                                optimization.
-                            </p>
-                        </div>
-
-                        <div class="space-y-4 mb-8">
-                            <div class="bg-slate-50 p-4 rounded-lg border border-slate-100">
-                                <h4 class="font-semibold text-slate-900 mb-2 text-sm">🚀 Highlights</h4>
-                                <ul class="text-sm text-slate-600 space-y-1 list-disc list-inside">
-                                    <li>Pure C implementation for maximum control</li>
-                                    <li>High-dimensional array manipulation</li>
-                                </ul>
-                            </div>
-
-                            <div class="flex flex-wrap gap-2">
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">C</span>
-                                <span
-                                    class="px-2.5 py-1 bg-white border border-slate-200 text-slate-600 rounded text-xs font-medium">Memory
-                                    Management</span>
-                            </div>
-                        </div>
-
-                        <a href="https://github.com/luiz826/Programacao_Estruturada/tree/main/projeto_final"
-                            target="_blank" class="btn-primary inline-flex items-center gap-2">
-                            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                                <path fill-rule="evenodd"
-                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
-                                    clip-rule="evenodd"></path>
-                            </svg>
-                            View on GitHub
-                        </a>
-                    </div>
-                </div>
-            </article>
-
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="bg-white border-t border-slate-200 py-12">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="text-center md:text-left">
-                    <span class="font-serif font-bold text-xl text-slate-900">Luiz Fernando</span>
-                    <p class="text-slate-500 text-sm mt-2">
-                        © 2026 Luiz Fernando Costa dos Santos. All rights reserved.
-                    </p>
-                </div>
-
-                <div class="flex space-x-8">
-                    <a href="../index.html"
-                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Home</a>
-                    <a href="projects.html"
-                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Projects</a>
-                    <a href="experience.html"
-                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Experience</a>
-                    <a href="../index.html#contact"
-                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Contact</a>
+                        <p class="fig__code">LF-402A</p>
+                        <figcaption>Figure 4-2. Rubber Duck Detection</figcaption>
+                    </figure>
                 </div>
             </div>
+        </section>
+
+        <section class="para" id="anomaly-engine">
+            <p class="para__no">4.4</p>
+            <div class="para__body">
+                <h2 class="entry__title">Real-Time Anomaly Engine</h2>
+                <p class="entry__meta"><span>Streaming &amp; Observability</span></p>
+                <div class="split">
+                    <div>
+                        <p>Production-ready real-time anomaly detection engine for e-commerce logs. It combines high-throughput Kafka ingestion, Spark structured streaming, and TimescaleDB for metrics storage, plus LLM-powered insights.</p>
+                        <ul class="points">
+                            <li>End-to-end streaming pipeline with Kafka and Spark</li>
+                            <li>RAG pipeline + embeddings for LLM-guided root cause insights</li>
+                            <li>Automatic anomaly detection with alerting</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Spark</li>
+                            <li>Kafka</li>
+                            <li>LangChain</li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="https://github.com/luiz826/realtime-anomaly-engine">GitHub</a></li>
+                        </ul>
+                    </div>
+                    <figure class="fig">
+                        <div class="fig__frame">
+                            <img src="../assets/images/projects/demo-e-comerce.gif" width="816" height="384" alt="Real-Time Anomaly Engine demo" loading="lazy" decoding="async">
+                        </div>
+                        <p class="fig__code">LF-403A</p>
+                        <figcaption>Figure 4-3. Real-Time Anomaly Engine</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="para" id="soletras">
+            <p class="para__no">4.5</p>
+            <div class="para__body">
+                <h2 class="entry__title"><a href="https://soletras.vercel.app/">Soletras</a></h2>
+                <p class="entry__meta"><span>Full-Stack NLP</span></p>
+                <div class="split">
+                    <div>
+                        <p>Brazilian word searcher system that helps people complete the Brazilian SpellingBee. Features advanced filtering and search capabilities powered by SpaCy NLP.</p>
+                        <ul class="points">
+                            <li>SpaCy NLP to filter conjugated verbs and plurals</li>
+                            <li>550,633+ Brazilian Portuguese words</li>
+                            <li>Modern React 18 + Vite frontend</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Flask</li>
+                            <li>React</li>
+                            <li>SpaCy</li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="https://github.com/luiz826/soletras">GitHub</a></li>
+                            <li><a href="https://soletras.vercel.app/">Live</a></li>
+                        </ul>
+                    </div>
+                    <figure class="fig">
+                        <div class="fig__frame">
+                            <img src="../assets/images/projects/soletras.png" width="1235" height="920" alt="Soletras screenshot" loading="lazy" decoding="async">
+                        </div>
+                        <p class="fig__code">LF-404A</p>
+                        <figcaption>Figure 4-4. Soletras</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="para" id="pumle">
+            <p class="para__no">4.6</p>
+            <div class="para__body">
+                <h2 class="entry__title">PUMLE</h2>
+                <p class="entry__meta"><span>Data Engineering</span></p>
+                <div class="split">
+                    <div>
+                        <p>Innovative data pipeline for geological carbon storage in Brazilian reservoirs. Transforms complex simulation outputs into streamlined multidimensional arrays.</p>
+                        <ul class="points">
+                            <li>Multi-format export (NumPy, Zarr, MAT-files, CSV)</li>
+                            <li>Optimized for large-scale geological simulations</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>NumPy</li>
+                            <li>Zarr</li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="https://github.com/luiz826/PUMLE">GitHub</a></li>
+                        </ul>
+                    </div>
+                    <figure class="fig">
+                        <div class="fig__frame">
+                            <img src="../assets/images/projects/gif-pumle.gif" width="864" height="864" alt="PUMLE demo" loading="lazy" decoding="async">
+                        </div>
+                        <p class="fig__code">LF-405A</p>
+                        <figcaption>Figure 4-5. PUMLE</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="para" id="car-plate">
+            <p class="para__no">4.7</p>
+            <div class="para__body">
+                <h2 class="entry__title">Car Plate Detection</h2>
+                <p class="entry__meta"><span>Computer Vision</span></p>
+                <div class="split">
+                    <div>
+                        <p>Intelligent license plate recognition system powered by YOLO deep learning architecture. Designed for Brazilian vehicle registration patterns with high accuracy.</p>
+                        <ul class="points">
+                            <li>YOLO-based object detection for precise plate localization</li>
+                            <li>Character recognition optimized for Brazilian formats</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>YOLO</li>
+                            <li>OpenCV</li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="https://github.com/luiz826/plate-detection">GitHub</a></li>
+                        </ul>
+                    </div>
+                    <figure class="fig">
+                        <div class="fig__frame">
+                            <img src="../assets/images/projects/car-plate_gif.gif" width="482" height="854" alt="Car Plate Detection demo" loading="lazy" decoding="async">
+                        </div>
+                        <p class="fig__code">LF-406A</p>
+                        <figcaption>Figure 4-6. Car Plate Detection</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="para" id="michael-scott">
+            <p class="para__no">4.8</p>
+            <div class="para__body">
+                <h2 class="entry__title">Michael Scott Speak Generator</h2>
+                <p class="entry__meta"><span>NLP</span></p>
+                <div class="split">
+                    <div>
+                        <p>Text generation system powered by GPT-2 transformers architecture. Generates text in the style of Michael Scott from "The Office", leveraging advanced NLP techniques.</p>
+                        <ul class="points">
+                            <li>Fine-tuning on character-specific dialogue</li>
+                            <li>Contextual understanding of "The Office" episodes</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>Transformers</li>
+                            <li>PyTorch</li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="https://huggingface.co/luiz826/MichaelScottGenFinal">Hugging Face</a></li>
+                        </ul>
+                    </div>
+                    <figure class="fig">
+                        <div class="fig__frame">
+                            <img src="../assets/images/projects/office-sentence.gif" width="220" height="220" alt="Michael Scott generator demo" loading="lazy" decoding="async">
+                        </div>
+                        <p class="fig__code">LF-407A</p>
+                        <figcaption>Figure 4-7. Michael Scott Speak Generator</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="para" id="motion-coach">
+            <p class="para__no">4.9</p>
+            <div class="para__body">
+                <h2 class="entry__title">Motion Coach: Gym Assistant</h2>
+                <p class="entry__meta"><span>Computer Vision</span></p>
+                <div class="split">
+                    <div>
+                        <p>Innovative gym assistant application that leverages computer vision to provide real-time feedback on exercise form and technique. Achieved F1-score of 0.92.</p>
+                        <ul class="points">
+                            <li>Real-time pose detection and tracking</li>
+                            <li>Form analysis using keypoint detection</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>FastAPI</li>
+                            <li>MediaPipe</li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="https://github.com/caiochacon/deep_pdi/tree/clean-branch">GitHub</a></li>
+                        </ul>
+                    </div>
+                    <figure class="fig">
+                        <div class="fig__frame">
+                            <img src="../assets/images/projects/motion-coach.png" width="664" height="1058" alt="Motion Coach screenshot" loading="lazy" decoding="async">
+                        </div>
+                        <p class="fig__code">LF-408A</p>
+                        <figcaption>Figure 4-8. Motion Coach: Gym Assistant</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="para" id="bin-packing">
+            <p class="para__no">4.10</p>
+            <div class="para__body">
+                <h2 class="entry__title">Bin Packing Optimizer</h2>
+                <p class="entry__meta"><span>Algorithms</span></p>
+                <div class="split">
+                    <div>
+                        <p>High-performance solution to the Variable-Sized Bin Packing Problem (VSBPP). Built from scratch in C++ to achieve optimal space utilization with minimal computational overhead.</p>
+                        <ul class="points">
+                            <li>Optimized C++ implementation for maximum speed</li>
+                            <li>Variable-sized container support</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>C++</li>
+                            <li>Algorithms</li>
+                            <li>Optimization</li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="https://github.com/luiz826/bin-packing">GitHub</a></li>
+                        </ul>
+                    </div>
+                    <figure class="fig">
+                        <div class="fig__frame">
+                            <img src="../assets/images/projects/bin-packing.jpg" width="493" height="391" alt="Bin packing illustration" loading="lazy" decoding="async">
+                        </div>
+                        <p class="fig__code">LF-409A</p>
+                        <figcaption>Figure 4-9. Bin Packing Optimizer</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="para" id="branch-and-bound">
+            <p class="para__no">4.11</p>
+            <div class="para__body">
+                <h2 class="entry__title">Branch and Bound</h2>
+                <p class="entry__meta"><span>Optimization</span></p>
+                <div class="split">
+                    <div>
+                        <p>Mathematical optimization powerhouse implementing the classic Branch and Bound algorithm. Designed to solve complex integer linear programming problems with guaranteed optimal solutions.</p>
+                        <ul class="points">
+                            <li>Classic Branch and Bound implementation</li>
+                            <li>Integer linear programming solver</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>Python</li>
+                            <li>MIP</li>
+                            <li>Math</li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="https://github.com/luiz826/branch_and_bound">GitHub</a></li>
+                        </ul>
+                    </div>
+                    <figure class="fig">
+                        <div class="fig__frame">
+                            <img src="../assets/images/projects/bb.png" width="797" height="492" alt="Branch and Bound tree illustration" loading="lazy" decoding="async">
+                        </div>
+                        <p class="fig__code">LF-410A</p>
+                        <figcaption>Figure 4-10. Branch and Bound</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="para" id="numpy-from-scratch">
+            <p class="para__no">4.12</p>
+            <div class="para__body">
+                <h2 class="entry__title">NumPy from Scratch</h2>
+                <p class="entry__meta"><span>Low-Level</span></p>
+                <div class="split">
+                    <div>
+                        <p>Ground-up recreation of NumPy's core functionality using pure C programming. Demonstrates deep understanding of memory management, array operations, and performance optimization.</p>
+                        <ul class="points">
+                            <li>Pure C implementation for maximum control</li>
+                            <li>High-dimensional array manipulation</li>
+                        </ul>
+                        <ul class="tags">
+                            <li>C</li>
+                            <li>Memory Management</li>
+                        </ul>
+                        <ul class="links">
+                            <li><a href="https://github.com/luiz826/Programacao_Estruturada/tree/main/projeto_final">GitHub</a></li>
+                        </ul>
+                    </div>
+                    <figure class="fig">
+                        <div class="fig__frame">
+                            <img src="../assets/images/projects/numpy.svg" alt="NumPy logo" loading="lazy" decoding="async">
+                        </div>
+                        <p class="fig__code">LF-411A</p>
+                        <figcaption>Figure 4-11. NumPy from Scratch</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="sheet">
+        <div class="foot">
+            <p class="foot__name">Luiz Fernando Costa dos Santos</p>
+            <dl class="foot__dates">
+                <div><dt>Station</dt><dd>João Pessoa, BR</dd></div>
+                <div><dt>Basic Date</dt><dd>27 March 2025</dd></div>
+                <div><dt>Change Date</dt><dd>16 November 2026</dd></div>
+                <div><dt>Page</dt><dd>4-1</dd></div>
+            </dl>
+            <ul class="links">
+                <li><a href="https://github.com/luiz826">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/luizfernando632/">LinkedIn</a></li>
+                <li><a href="mailto:luizfernando1012000@gmail.com">Email</a></li>
+                <li><a href="https://www.instagram.com/luiz_fernando.ipynb/">Instagram</a></li>
+            </ul>
         </div>
     </footer>
-
 </body>
 
 </html>

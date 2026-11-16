@@ -1,176 +1,119 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Blog | Luiz Fernando</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Thoughts and writing by Luiz Fernando on machine learning, data engineering, and software.">
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Writing — Luiz Fernando</title>
+    <meta name="description" content="Writing by Luiz Fernando on machine learning, systems, and everything else.">
+    <meta name="author" content="Luiz Fernando Costa dos Santos">
+    <meta name="theme-color" content="#bcc9d9">
+    <link rel="canonical" href="https://luiz826.github.io/pages/blog.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Luiz Fernando">
+    <meta property="og:title" content="Writing — Luiz Fernando">
+    <meta property="og:description" content="Writing by Luiz Fernando on machine learning, systems, and everything else.">
+    <meta property="og:url" content="https://luiz826.github.io/pages/blog.html">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23bcc9d9'/%3E%3Crect x='18' y='6' width='14' height='20' fill='%23151a24'/%3E%3Crect x='4' y='9' width='10' height='2.5' fill='%23151a24'/%3E%3Crect x='4' y='15' width='10' height='2.5' fill='%23151a24'/%3E%3Crect x='4' y='21' width='7' height='2.5' fill='%23151a24'/%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Charter:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
-
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'serif': ['Charter', 'Georgia', 'serif'],
-                        'sans': ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-                    },
-                    colors: {
-                        primary: '#0f172a',
-                        accent: '#6366f1',
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
-<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-indigo-100 selection:text-indigo-900">
+<body>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <!-- NAVIGATION -->
-    <header
-        class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 transition-all duration-300">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="../index.html"
-                class="font-serif font-bold text-2xl text-slate-900 tracking-tight hover:text-indigo-600 transition-colors">
-                Luiz Fernando
-            </a>
-
-            <nav class="hidden md:block">
-                <ul class="flex items-center space-x-8 text-sm font-medium text-slate-600">
-                    <li><a href="../index.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Home</a></li>
-                    <li><a href="experience.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Experience</a></li>
-                    <li><a href="education.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Education</a></li>
-                    <li><a href="projects.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Projects</a></li>
-                    <li><a href="extracurricular.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Extracurricular</a>
-                    </li>
-                    <li><a href="certifications.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Certifications</a></li>
-                    <li><a href="curriculum.html"
-                            class="hover:text-slate-900 hover:text-indigo-600 transition-colors">Curriculum</a></li>
-                    <li><a href="blog.html" class="text-indigo-600 font-semibold">Blog</a></li>
-                </ul>
-            </nav>
-
-            <button class="md:hidden text-slate-600 hover:text-slate-900">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
+    <header class="topbar">
+        <a class="chip" href="../index.html">Luiz Fernando</a>
+        <nav aria-label="Sections">
+            <ul>
+                <li><a class="chip" href="../pages/experience.html">Experience</a></li>
+                <li><a class="chip" href="../pages/education.html">Education</a></li>
+                <li><a class="chip" href="../pages/projects.html">Projects</a></li>
+                <li><a class="chip" href="../pages/extracurricular.html">Activities</a></li>
+                <li><a class="chip" href="../pages/certifications.html">Certifications</a></li>
+                <li><a class="chip" href="../pages/blog.html" aria-current="page">Writing</a></li>
+            </ul>
+        </nav>
+        <a class="chip chip--ink" href="../pages/curriculum.html">CV</a>
     </header>
 
-    <main class="flex-grow page-container">
-        <div class="section-header animate-fade-in">
-            <h1 class="section-title">Blog</h1>
-            <p class="section-description">
-                Thoughts on machine learning, systems, and everything else.
-            </p>
-        </div>
+    <div class="tab" style="--tab-step: 7" aria-hidden="true">LOG</div>
 
-        <div id="posts-list" class="max-w-2xl mx-auto space-y-6 animate-fade-in delay-200"></div>
+    <main id="main" class="sheet">
+        <header class="pagehead">
+            <p class="runhead"><b>LF826-HB-(1)</b><span>Section 8</span><span>Systems data</span></p>
+            <h1 class="title title--page">Writing</h1>
+            <p class="lede">Thoughts on machine learning, systems, and everything else.</p>
+        </header>
+
+        <ol class="posts" id="posts-list">
+            <li class="post-row">
+                <p class="para__no">8.1</p>
+                <p>Loading…</p>
+            </li>
+        </ol>
+
+        <script>
+            const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+            }[c]));
+
+            async function loadPosts() {
+                const list = document.getElementById('posts-list');
+                const message = text => `<li class="post-row"><p class="para__no">8.1</p><p>${text}</p></li>`;
+                try {
+                    const res = await fetch('../posts/index.json');
+                    const posts = (await res.json()).sort((a, b) => new Date(b.date) - new Date(a.date));
+                    if (posts.length === 0) {
+                        list.innerHTML = message('Posts coming soon. Working on writing about LLM training, tokenization in Rust, and lessons from production ML systems.');
+                        return;
+                    }
+                    list.innerHTML = posts.map((post, i) => {
+                        const date = new Date(post.date + 'T12:00:00').toLocaleDateString('en-US', {
+                            year: 'numeric', month: 'short', day: 'numeric'
+                        });
+                        const tags = [post.lang, ...(post.tags || [])].filter(Boolean)
+                            .map(t => `<li>${esc(t)}</li>`).join('');
+                        return `
+                            <li class="post-row">
+                                <p class="para__no">8.${i + 1}</p>
+                                <div>
+                                    <h2 class="entry__title post-row__title"><a href="post.html?slug=${encodeURIComponent(post.slug)}">${esc(post.title)}</a></h2>
+                                    <p class="entry__meta"><span>${date}</span></p>
+                                    <p>${esc(post.excerpt)}</p>
+                                    <ul class="tags">${tags}</ul>
+                                </div>
+                            </li>`;
+                    }).join('');
+                } catch (e) {
+                    list.innerHTML = message('Could not load posts.');
+                }
+            }
+
+            loadPosts();
+        </script>
+
     </main>
 
-    <!-- FOOTER -->
-    <footer class="bg-white border-t border-slate-200 py-12">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
-                <div class="text-center md:text-left">
-                    <span class="font-serif font-bold text-xl text-slate-900">Luiz Fernando</span>
-                    <p class="text-slate-500 text-sm mt-2">
-                        © 2026 Luiz Fernando Costa dos Santos. All rights reserved.
-                    </p>
-                </div>
-                <div class="flex space-x-8">
-                    <a href="../index.html"
-                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Home</a>
-                    <a href="projects.html"
-                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Projects</a>
-                    <a href="experience.html"
-                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Experience</a>
-                    <a href="../index.html#contact"
-                        class="text-slate-500 hover:text-indigo-600 text-sm font-medium transition-colors">Contact</a>
-                </div>
-            </div>
+    <footer class="sheet">
+        <div class="foot">
+            <p class="foot__name">Luiz Fernando Costa dos Santos</p>
+            <dl class="foot__dates">
+                <div><dt>Station</dt><dd>João Pessoa, BR</dd></div>
+                <div><dt>Basic Date</dt><dd>27 March 2025</dd></div>
+                <div><dt>Change Date</dt><dd>16 November 2026</dd></div>
+                <div><dt>Page</dt><dd>8-1</dd></div>
+            </dl>
+            <ul class="links">
+                <li><a href="https://github.com/luiz826">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/luizfernando632/">LinkedIn</a></li>
+                <li><a href="mailto:luizfernando1012000@gmail.com">Email</a></li>
+                <li><a href="https://www.instagram.com/luiz_fernando.ipynb/">Instagram</a></li>
+            </ul>
         </div>
     </footer>
-
-    <script>
-        async function loadPosts() {
-            const container = document.getElementById('posts-list');
-            try {
-                const res = await fetch('../posts/index.json');
-                const posts = (await res.json()).sort((a, b) => new Date(b.date) - new Date(a.date));
-
-                if (posts.length === 0) {
-                    container.innerHTML = `
-                        <div class="content-card text-center py-16">
-                            <div class="w-16 h-16 bg-indigo-50 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                                <svg class="w-8 h-8 text-indigo-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                                </svg>
-                            </div>
-                            <h2 class="font-serif text-2xl font-bold text-slate-900 mb-3">Posts coming soon</h2>
-                            <p class="text-slate-500 leading-relaxed max-w-sm mx-auto">
-                                Working on writing about LLM training, tokenization in Rust, and lessons from production ML systems.
-                            </p>
-                        </div>`;
-                    return;
-                }
-
-                container.innerHTML = posts.map(post => {
-                    const date = new Date(post.date).toLocaleDateString('en-US', {
-                        year: 'numeric', month: 'long', day: 'numeric'
-                    });
-                    const tags = (post.tags || []).map(t =>
-                        `<span class="px-2.5 py-1 bg-slate-50 text-slate-600 text-xs rounded border border-slate-200">${t}</span>`
-                    ).join('');
-
-                    const lang = post.lang
-                        ? `<span class="px-2 py-0.5 bg-indigo-50 text-indigo-600 text-xs font-medium rounded border border-indigo-100">${post.lang}</span>`
-                        : '';
-
-                    return `
-                        <a href="post.html?slug=${post.slug}" class="block group">
-                            <article class="content-card">
-                                <div class="absolute top-0 left-0 w-1 h-full bg-indigo-500 rounded-l-xl"></div>
-                                <div class="flex items-center gap-3 mb-2">
-                                    <p class="text-xs text-slate-400 font-medium uppercase tracking-wide">${date}</p>
-                                    ${lang}
-                                </div>
-                                <h2 class="font-serif text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors mb-2">${post.title}</h2>
-                                <p class="text-slate-500 text-sm leading-relaxed mb-4">${post.excerpt || ''}</p>
-                                <div class="flex flex-wrap gap-2">${tags}</div>
-                            </article>
-                        </a>`;
-                }).join('');
-
-            } catch (e) {
-                container.innerHTML = `<p class="text-center text-slate-400">Could not load posts.</p>`;
-            }
-        }
-
-        loadPosts();
-    </script>
-
 </body>
 
 </html>
